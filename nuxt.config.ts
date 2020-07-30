@@ -1,6 +1,6 @@
-import { Context } from 'vm'
+import { Context, } from 'vm';
 
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
 export default {
   /** Build configuration */
@@ -11,35 +11,35 @@ export default {
           enforce: 'pre',
           test: /\.(ts|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+          exclude: /(node_modules)/,
+        });
       }
     },
     loaders: {
       // we want to use sass instead of node-sass
       sass: {
-        import: ['~assets/style/app.sass'],
+        import: ['~assets/style/app.sass',],
         implementation: require('sass'),
-        fiber: require('fibers')
-      }
+        fiber: require('fibers'),
+      },
     },
-    plugins: [new VuetifyLoaderPlugin()],
-    transpile: ['vuetify/lib'],
+    plugins: [new VuetifyLoaderPlugin(),],
+    transpile: ['vuetify/lib',],
     typescript: {
       // this is required - if set to true the HMR in dev will time out
-      typeCheck: false
-    }
+      typeCheck: false,
+    },
   },
   /** @see https://typescript.nuxtjs.org/migration.html */
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: ['@nuxt/typescript-build',],
   /** Plugins to load before mounting the App **/
   plugins: [
     '~/plugins/hello',
-    '~/plugins/vuetify'
+    '~/plugins/vuetify',
   ],
   /** typescript config for nuxt */
   typescript: {
     typeCheck: false,
-    ignoreNotFoundWarnings: true
-  }
-}
+    ignoreNotFoundWarnings: true,
+  },
+};

@@ -44,6 +44,7 @@
 
     <v-app-bar
       app
+      hide-on-scroll
     >
       <v-app-bar-nav-icon
         @click="sideNavigationActive = !sideNavigationActive"
@@ -83,25 +84,25 @@
   </v-app>
 </template>
 <script lang="ts">
-import { Component, Vue, Watch } from 'vue-property-decorator'
-import { Getter } from 'vuex-class'
+import { Component, Vue, Watch, } from 'vue-property-decorator';
+import { Getter, } from 'vuex-class';
 
 @Component({
   data () {
     return {
       sideNavigationActive: true,
       items: [
-        { title: 'Dashboard', icon: 'dashboard' },
-        { title: 'Photos', icon: 'photo' },
-        { title: 'About', icon: 'check_circle' }
-      ]
-    }
-  }
+        { title: 'Dashboard', icon: 'dashboard', },
+        { title: 'Photos', icon: 'photo', },
+        { title: 'About', icon: 'check_circle', },
+      ],
+    };
+  },
 })
 export default class Home extends Vue {
   @Getter('counter/getCount') getCount: any
   @Watch('getCount') onCountChange (val: Number, oldVal: Number) {
-    this.countHasBeenUpdated = (val !== oldVal)
+    this.countHasBeenUpdated = (val !== oldVal);
   }
 
   countHasBeenUpdated = false

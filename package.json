@@ -8,7 +8,7 @@
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
     "start": "nuxt-ts start",
-    "lint": "eslint --ext .ts,.js,.vue .",
+    "lint": "eslint --fix --ext .ts,.js,.vue .",
     "post-update": "yarn upgrade --latest",
     "now-build": "nuxt-ts build --spa"
   },

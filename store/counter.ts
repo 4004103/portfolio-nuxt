@@ -1,21 +1,21 @@
 export const state = () => ({
-  count: 15
-})
+  count: 15,
+});
 
 export const mutations = {
   add (state: any, increment: Number) {
-    state.count += increment
-  }
-}
+    state.count += increment;
+  },
+};
 
 export const getters = {
   getCount (state: any) {
-    return state.count
-  }
-}
+    return state.count;
+  },
+};
 
 export const actions = {
   add (context: any, increment: Number) {
-    context.commit('add', increment)
-  }
-}
+    context.commit('add', increment);
+  },
+};

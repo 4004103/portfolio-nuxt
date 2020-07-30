@@ -30,21 +30,21 @@
   </v-layout>
 </template>
 <script lang="ts">
-import { Action } from 'vuex-class'
-import { Component, Vue } from 'vue-property-decorator'
-import Counter from '~/components/Counter.vue'
+import { Action, } from 'vuex-class';
+import { Component, Vue, } from 'vue-property-decorator';
+import Counter from '~/components/Counter.vue';
 
 @Component({
   components: {
-    Counter
-  }
+    Counter,
+  },
 })
 export default class Home extends Vue {
   @Action('counter/add') addToCounter: any
   counter = 0
   submit () {
-    this.addToCounter(Number(this.counter))
-    this.counter = 0
+    this.addToCounter(Number(this.counter));
+    this.counter = 0;
   }
 }
 </script>
