@@ -18,7 +18,7 @@ export default {
     loaders: {
       // we want to use sass instead of node-sass
       sass: {
-        import: ['~assets/style/app.sass',],
+        import: ['~assets/style/app.sass','~assets/style/default.sass',],
         implementation: require('sass'),
         fiber: require('fibers'),
       },
@@ -42,4 +42,8 @@ export default {
     typeCheck: false,
     ignoreNotFoundWarnings: true,
   },
+  css: [
+    // 프로젝트의 sass 파일
+    { src: '~assets/style/default.scss', lang: 'scss', }, // sass 대신 scss
+  ],
 };
