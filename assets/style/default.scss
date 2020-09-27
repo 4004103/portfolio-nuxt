@@ -1,0 +1,37 @@
+.bg-color1 {
+    // 베이지
+    background-color: #cfc0af;
+}
+
+.bg-color2 {
+    // 청록
+    background-color: #2a312d;
+}
+
+.bg-color3 {
+    // 샌드
+    background-color: #be9566;
+}
+
+// hieght 100 vh
+.mx-height {
+    height: 100vh;
+}
+
+// accessibility hidden
+.hidden {
+    overflow: hidden;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+// 섹션 안 컨텐츠 테두리 스타일
+.content_wrap {
+    width: 1000px;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, .5);
+}
