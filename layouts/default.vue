@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <!-- // 사이드메뉴
     <v-navigation-drawer
       v-model="sideNavigationActive"
       app
@@ -40,31 +41,24 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
 
-    <v-app-bar
-      app
-      hide-on-scroll
-    >
-      <v-app-bar-nav-icon
-        @click="sideNavigationActive = !sideNavigationActive"
-      />
-      <v-toolbar-title>Page title</v-toolbar-title>
+    <v-app-bar app hide-on-scroll>
+      <v-btn>
+        home
+      </v-btn>
+      <v-toolbar-title>조수아 포트폴리오</v-toolbar-title>
       <!-- -->
     </v-app-bar>
 
     <!-- Sizes your content based upon application components -->
     <v-content>
       <!-- Provides the application the proper gutter -->
-      <v-container
-        fluid
-      >
-        <v-card
-          class="mx-auto"
-        >
-          <v-card-title>
+      <v-container fluid>
+        <v-card class="mx-auto">
+          <v-card>
             <nuxt />
-          </v-card-title>
+          </v-card>
         </v-card>
         <!-- If using vue-router -->
       </v-container>
@@ -73,38 +67,35 @@
     <v-footer app>
       <!-- -->
     </v-footer>
-    <v-snackbar
-      v-model="countHasBeenUpdated"
-      :timeout="3000"
-      bottom
-      right
-    >
+    <v-snackbar v-model="countHasBeenUpdated" :timeout="3000" bottom right>
       count has been changed
     </v-snackbar>
   </v-app>
 </template>
 <script lang="ts">
 import { Component, Vue, Watch, } from 'vue-property-decorator';
-import { Getter, } from 'vuex-class';
+// import { Getter, } from 'vuex-class';
 
 @Component({
   data () {
     return {
+      /* 사이드메뉴
       sideNavigationActive: true,
       items: [
         { title: 'Dashboard', icon: 'dashboard', },
         { title: 'Photos', icon: 'photo', },
         { title: 'About', icon: 'check_circle', },
       ],
+      */
     };
   },
 })
 export default class Home extends Vue {
-  @Getter('counter/getCount') getCount: any
+  // @Getter('counter/getCount') getCount: any
   @Watch('getCount') onCountChange (val: Number, oldVal: Number) {
-    this.countHasBeenUpdated = (val !== oldVal);
+    this.countHasBeenUpdated = val !== oldVal;
   }
 
-  countHasBeenUpdated = false
+  countHasBeenUpdated = false;
 }
 </script>
