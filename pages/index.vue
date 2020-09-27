@@ -65,7 +65,7 @@
       <div class="content_wrap">
         <h2>HEAD</h2>
         <div class="d-flex">
-          content
+          content ddddㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴ
         </div>
       </div>
     </v-flex>
@@ -135,9 +135,6 @@ import { Component, Vue } from "vue-property-decorator";
 export default class Home extends Vue {
   @Action("counter/add") addToCounter: any;
   counter = 0;
-  submit() {
-    this.addToCounter(Number(this.counter));
-    this.counter = 0;
-  }
+  submit() {}
 }
 </script>
