@@ -101,7 +101,7 @@ body,
 
 // hieght 100 vh
 .mx-height {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 // accessibility hidden
@@ -148,3 +148,22 @@ body,
 
 
 // 컨텐츠 ===========================================================
+
+// skill
+.skill_wrap .html {
+    width: 50px;
+    height: 50px;
+    background-image: url(/static/images/skill_icon.png);
+}
+
+// portfolio
+.portfolio_wrap {
+    .v-card--reveal {
+        align-items: center;
+        bottom: 0;
+        justify-content: center;
+        opacity: .5;
+        position: absolute;
+        width: 100%;
+    }
+}

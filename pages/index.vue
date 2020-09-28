@@ -67,12 +67,15 @@
     <v-flex
       xs12
       border
-      class="section unknown1 bg-color2 mx-height d-flex justify-center align-center"
+      class="section skill_wrap bg-color2 mx-height d-flex justify-center align-center"
     >
       <div class="content_wrap">
         <h2>SKILL</h2>
-        <div class="d-flex">
-          content
+        <div class="d-flex justify-end">
+          <div>ff</div>
+          <div class="d-flex justify-end">
+            <span class="html"></span>
+          </div>
         </div>
       </div>
     </v-flex>
@@ -82,12 +85,72 @@
     <v-flex
       xs12
       border
-      class="section unknown2 bg-color3 mx-height d-flex justify-center align-center"
+      class="section portfolio_wrap bg-color3 mx-height d-flex justify-center align-center"
     >
       <div class="content_wrap">
         <h2>HEAD</h2>
         <div class="d-flex">
-          content
+          <v-carousel
+            cycle
+            height="auto"
+            hide-delimiter-background
+            show-arrows-on-hover
+          >
+            <v-carousel-item v-for="(slide, i) in slides" :key="i">
+              <v-sheet :color="colors[i]" height="100%">
+                <v-row class="fill-height" align="center" justify="center">
+                  <v-hover v-slot:default="{ hover }">
+                    <v-card
+                      class="mx-auto"
+                      color="grey lighten-4"
+                      max-width="600"
+                    >
+                      <v-img
+                        :aspect-ratio="16 / 9"
+                        src="https://cdn.vuetifyjs.com/images/cards/kitchen.png"
+                      >
+                        <v-expand-transition>
+                          <div
+                            v-if="hover"
+                            class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
+                            style="height: 100%;"
+                          >
+                            동천 10th
+                          </div>
+                        </v-expand-transition>
+                      </v-img>
+                      <v-card-text class="pt-6" style="position: relative;">
+                        <v-btn
+                          absolute
+                          color="orange"
+                          class="white--text"
+                          fab
+                          large
+                          right
+                          top
+                          href="https://4004103.github.io/d10th/"
+                        >
+                          <v-icon>reply</v-icon>
+                        </v-btn>
+                        <div class="font-weight-light grey--text title mb-2">
+                          For the perfect meal
+                        </div>
+                        <h3
+                          class="display-1 font-weight-light orange--text mb-2"
+                        >
+                          QW cooking utensils
+                        </h3>
+                        <div class="font-weight-light title mb-2">
+                          Our Vintage kitchen utensils delight any chef.<br />
+                          Made of bamboo by hand
+                        </div>
+                      </v-card-text>
+                    </v-card>
+                  </v-hover>
+                </v-row>
+              </v-sheet>
+            </v-carousel-item>
+          </v-carousel>
         </div>
       </div>
     </v-flex>
@@ -113,18 +176,18 @@
       <v-bottom-navigation v-model="bottomNav">
         <v-btn value="recent">
           <span>Recent</span>
-          <v-icon>mdi-history</v-icon>
+          <v-icon>history</v-icon>
           <v-slot>djfksjdfljsdfkdjfkds</v-slot>
         </v-btn>
 
         <v-btn value="favorites">
           <span>Favorites</span>
-          <v-icon>mdi-heart</v-icon>
+          <v-icon>heart</v-icon>
         </v-btn>
 
         <v-btn value="nearby">
           <span>Nearby</span>
-          <v-icon>mdi-map-marker</v-icon>
+          <v-icon>map-marker</v-icon>
         </v-btn>
       </v-bottom-navigation>
     </v-flex>
@@ -143,11 +206,11 @@ import { Component, Vue } from "vue-property-decorator";
     // (지금은)메소드. 단독으로 있을때는 펑션, 클래스 안에 있거나 객체 안에 있으면 메소드라고 부름
     return {
       colors: [
-        "indigo",
-        "warning",
-        "pink darken-2",
-        "red lighten-1",
-        "deep-purple accent-4",
+        "brown lighten-5",
+        "brown lighten-4",
+        "brown lighten-3",
+        "brown lighten-2",
+        "brown lighten-1",
       ],
       slides: ["First", "Second", "Third", "Fourth", "Fifth"],
       bottomNav: "recent",
