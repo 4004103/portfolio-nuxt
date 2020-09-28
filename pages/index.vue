@@ -193,33 +193,33 @@
     </v-flex>
   </v-layout>
 </template>
-<script lang="ts">
-import { Action } from "vuex-class";
-import { Component, Vue } from "vue-property-decorator";
-// import Counter from '~/components/Counter.vue';
 
-@Component({
-  // components: {
-  //   Counter,
-  // },
-  data() {
-    // (지금은)메소드. 단독으로 있을때는 펑션, 클래스 안에 있거나 객체 안에 있으면 메소드라고 부름
-    return {
-      colors: [
-        "brown lighten-5",
-        "brown lighten-4",
-        "brown lighten-3",
-        "brown lighten-2",
-        "brown lighten-1",
-      ],
-      slides: ["First", "Second", "Third", "Fourth", "Fifth"],
-      bottomNav: "recent",
-    };
-  },
-})
-export default class Home extends Vue {
-  @Action("counter/add") addToCounter: any;
-  counter = 0;
-  submit() {}
-}
+<script>
+export default {
+  data: () => ({
+    colors: [
+      "brown lighten-5",
+      "brown lighten-4",
+      "brown lighten-3",
+      "brown lighten-2",
+      "brown lighten-1",
+    ],
+    slides: ["First", "Second", "Third", "Fourth", "Fifth"],
+    bottomNav: "recent",
+    items: [
+      {
+        color: "#1F7087",
+        src: "https://cdn.vuetifyjs.com/images/cards/foster.jpg",
+        title: "Supermodel",
+        artist: "Foster the People",
+      },
+      {
+        color: "#952175",
+        src: "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
+        title: "Halcyon Days",
+        artist: "Ellie Goulding",
+      },
+    ],
+  }),
+};
 </script>
