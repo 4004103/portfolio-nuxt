@@ -26,16 +26,38 @@
       </v-btn>
     </v-flex> -->
 
+    <!-- s: main page image -->
+    <v-flex
+      xs12
+      border
+      class="section profile mx-height d-flex justify-center align-center"
+    >
+      <div class="content_page_main d-flex align-center">
+        <div class="greeting d-flex">
+          안녕하세요, 조수아입니다.
+        </div>
+      </div>
+    </v-flex>
+    <!-- e: main page image -->
+
     <!-- s: profile -->
     <v-flex
       xs12
       border
       class="section profile bg-color1 mx-height d-flex justify-center align-center"
     >
-      <div class="content_wrap">
-        <h2>HEAD</h2>
+      <div class="content_wrap content_page1">
+        <h2>What is Lorem Ipsum?</h2>
         <div class="d-flex">
-          content
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
         </div>
       </div>
     </v-flex>
@@ -48,7 +70,7 @@
       class="section unknown1 bg-color2 mx-height d-flex justify-center align-center"
     >
       <div class="content_wrap">
-        <h2>HEAD</h2>
+        <h2>SKILL</h2>
         <div class="d-flex">
           content
         </div>
@@ -65,7 +87,7 @@
       <div class="content_wrap">
         <h2>HEAD</h2>
         <div class="d-flex">
-          content ddddㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴㄴ
+          content
         </div>
       </div>
     </v-flex>

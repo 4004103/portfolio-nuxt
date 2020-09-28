@@ -43,16 +43,21 @@
       </v-list>
     </v-navigation-drawer> -->
 
-    <v-app-bar app hide-on-scroll>
-      <v-btn>
-        home
-      </v-btn>
-      <v-toolbar-title>조수아 포트폴리오</v-toolbar-title>
+    <v-app-bar
+      app
+      hide-on-scroll
+      color="rgba(255, 255, 255, 0.5)"
+      class="appbar_wrap"
+    >
+      <a href="/">
+        SU A JO
+      </a>
+      <v-toolbar-title>안녕하세요, 조수아입니다.</v-toolbar-title>
       <!-- -->
     </v-app-bar>
 
     <!-- Sizes your content based upon application components -->
-    <v-content>
+    <v-content class="user_layout">
       <!-- Provides the application the proper gutter -->
       <v-container fluid>
         <v-card class="mx-auto">
@@ -73,11 +78,11 @@
   </v-app>
 </template>
 <script lang="ts">
-import { Component, Vue, Watch, } from 'vue-property-decorator';
+import { Component, Vue, Watch } from "vue-property-decorator";
 // import { Getter, } from 'vuex-class';
 
 @Component({
-  data () {
+  data() {
     return {
       /* 사이드메뉴
       sideNavigationActive: true,
@@ -92,7 +97,7 @@ import { Component, Vue, Watch, } from 'vue-property-decorator';
 })
 export default class Home extends Vue {
   // @Getter('counter/getCount') getCount: any
-  @Watch('getCount') onCountChange (val: Number, oldVal: Number) {
+  @Watch("getCount") onCountChange(val: Number, oldVal: Number) {
     this.countHasBeenUpdated = val !== oldVal;
   }
 
