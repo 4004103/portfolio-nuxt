@@ -1,3 +1,6 @@
+// English Font
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 // Font
 @font-face {
     font-family: 'Noto Sans KR';
@@ -42,6 +45,7 @@
     src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
 }
 
+
 html,
 body,
 .v-application .v-application--wrap {
@@ -54,49 +58,24 @@ body,
 }
 
 
-// content main page
-.content_page_main {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-
-    &:after {
-        content: '';
-        background-image: url("https://images.unsplash.com/photo-1598006844670-d8ef9bd2eed2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
-        filter: brightness(0.5);
-    }
-
-    .greeting {
-        font-size: 40px;
-        font-weight: 500;
-        position: relative;
-        z-index: 1;
-    }
-}
-
 .bg-color1 {
-    // 베이지
-    background-color: #cfc0af;
+    // 연노랑
+    background-color: #f7e1ad;
 }
 
 .bg-color2 {
-    // 청록
-    background-color: #2a312d;
+    // 연초록
+    background-color: #c4d2ac;
 }
 
 .bg-color3 {
-    // 샌드
-    background-color: #be9566;
+    // 연분홍
+    background-color: #f7d5c9;
+}
+
+.bg-color4 {
+    // 연주황
+    background-color: #df9a71;
 }
 
 // hieght 100 vh
@@ -147,13 +126,13 @@ body,
     margin-bottom: 40px;
     text-align: center;
     text-shadow: 0px 5px 5px #757474;
-    opacity: .9;
     position: relative;
     text-transform: uppercase;
+    font-family: 'Kaushan Script', cursive;
 
 
     &:after {
-        content: "/ / /";
+        content: "";
         color: inherit;
         position: absolute;
         bottom: 0;
@@ -166,9 +145,72 @@ body,
 
 // 컨텐츠 ===========================================================
 
+
+// main page
+.content_page_main {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    z-index: 1;
+
+    .greeting {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        font-weight: bold;
+        font-size: 4rem;
+        font-style: italic;
+        opacity: .7;
+        text-align: center;
+
+    }
+
+    &:before {
+        content: "";
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: auto;
+        left: calc(100% - 95%);
+        border: 2px solid #fff;
+        z-index: 1;
+        opacity: .7;
+    }
+
+    &:after {
+        content: '';
+        background-image: url("https://images.unsplash.com/photo-1441371884467-a92d44ae82c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1566&q=80");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        filter: brightness(0.9);
+    }
+}
+
+.content_page_text {
+    width: 100%;
+    height: 30%;
+}
+
 // skill
 .skill_wrap .html {
     width: 50px;
     height: 50px;
     //background-image: url(/static/images/skill_icon.png);
+}
+
+.github-icon:after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background: url('https://api.iconify.design/mdi:github.svg?color=%23fff') no-repeat center center / contain;
 }
