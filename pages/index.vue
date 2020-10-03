@@ -5,44 +5,25 @@
         조수아 포트폴리오
       </h1>
     </v-flex>
-    <!-- // counter
-    <v-flex xs12>
-      <Counter />
-    </v-flex>
-    <v-flex xs12>
-      <v-form>
-        <v-text-field
-          v-model="counter"
-          label="add to counter"
-          required
-        />
-      </v-form>
-      <v-btn
-        block
-        color="primary"
-        @click="submit"
-      >
-        add to counter
-      </v-btn>
-    </v-flex> -->
 
     <!-- s: main page image -->
     <v-flex
       xs12
       border
-      class="section profile mx-height d-flex justify-center align-center flex-column"
+      class="section main_img d-flex align-center flex-column"
     >
-      <div class="content_page_main d-flex align-center">
-        <div class="greeting d-flex align-center justify-center col-12">
-          Welcome,</br>
-          Portfolio Of Su a
-        </div>
-      </div>
-      <div
-        class="content_page_text d-flex justify-center align-center bg-color1"
-      >
-        <div class="d-flex col-12 pa-6">
-          충분히 인간의 가슴이 뜨고, 낙원을 있다. 꾸며 그들의 이상은 듣는다. 고행을 가지에 청춘은 있는 얼마나 밝은 역사를 기관과 무엇을 약동하다. 위하여 그것을 그들에게 튼튼하며, 영원히 가장 안고, 끝까지 봄바람이다. 붙잡아 생의 능히 속잎나고, 내려온 가치를 뜨고, 하였으며, 보내는 이것이다. 피가 얼마나 인생의 열매를 지혜는 꾸며 위하여서. 이상이 천고에 없는 이상의 품고 말이다. 되는 투명하되 내려온 그들의 보내는 방황하여도, 불러 힘있다. 인간은 역사를 청춘 듣기만 청춘의 있음으로써 것이다. 바이며, 이상을 굳세게 뛰노는 것은 뿐이다.
+      <div class="content_page_main d-flex align-center justify-center">
+        <div class="col-12 greeting d-flex flex-column justify-center">
+          <h2>SU A&nbsp;<span class="white--text">JO</span></h2>
+          <div class="info_text white--text mb-sm-12 mb-6">
+            Welcome to my portfolio site.
+          </div>
+          <div class="skill_text white--text d-flex flex-column">
+            <span>Publisher</span>
+            <span>1991</span>
+            <span>Bicycle Riding</span>
+            <span>Active</span>
+          </div>
         </div>
       </div>
     </v-flex>
@@ -52,16 +33,27 @@
     <v-flex
       xs12
       border
-      class="section profile bg-color2 mx-height d-flex justify-center align-center  pa-6"
+      class="section profile mx-height d-flex align-center justify-center"
     >
-      <div class="content_wrap content_page1">
-        <h2>about</h2>
-        <div class="d-flex">
-          3년차 퍼블리셔 조수아입니다. 시맨틱 마크업, 웹 접근성, 크로스
-          브라우징.. 프론트엔드에 많은 관심을 가지고 개발자가 되기 위해 달려가고
-          있는 중입니다!
-        </div>
-      </div>
+      <v-col
+        class="content_wrap content_page1 d-flex justify-sm-space-between row"
+      >
+        <v-col class="d-flex col-12 col-sm-9 flex-column justify-sm-space-between">
+          <h2>profile</h2>
+          <div>
+            이상의 열매를 눈이 위하여서, 봄날의 방황하였으며, 청춘 얼마나 것이다. 무엇이 가진 만천하의 그들의 위하여서. 속잎나고, 위하여 아니더면, 구하기 이상을 않는 청춘을 뜨거운지라, 위하여서. 내는 위하여서, 이상, 관현악이며, 심장은 가지에 인간에 지혜는 교향악이다. 그들의 많이 남는 방지하는 이상을 위하여 이상 속에서 것이다.
+          </div>
+        </v-col>
+        <v-col
+          class="grey lighten-3 pa-4 pa-sm-6 d-flex col-12 col-sm-3 col-offset-1 flex-column justify-sm-space-between right-side_box"
+        >
+          <span class="mb-6">Hello ! </span>
+          <p>
+            안녕하세요,</br>
+            웹 퍼블리셔 조수아입니다.
+          </p>
+        </v-col>
+      </v-col>
     </v-flex>
     <!-- e: profile -->
 
@@ -69,215 +61,190 @@
     <v-flex
       xs12
       border
-      class="section skill_wrap bg-color3 mx-height d-flex justify-center align-center pa-6"
+      class="section skill_wrap mx-height d-flex justify-center align-center"
     >
-      <div class="content_wrap">
-        <h2>skill</h2>
-        <div class="d-flex row">
-          <div class="col-sm-3 col-xs-12">img area</div>
-          <div class="col-sm-9 col-xs-12 d-flex flex-wrap">
-            <div class="col-12">text area</div>
-            <div class="col-12">text area</div>
-            <div class="col-12">text area</div>
-            <div class="col-12">text area</div>
-          </div>
-        </div>
+      <div class="content_wrap content_page2 d-flex justify-sm-space-between row">
+        <v-col class="col-sm-9 col-xs-12">            
+          <v-img 
+            src="https://images.unsplash.com/photo-1598120719213-fd32e04101da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+            class="me"
+          ></v-img>
+          <h2>skill</h2>
+        </v-col>
+        <v-col class="d-flex col-12 col-sm-3 flex-column skill_text">
+            <h3>ASDFGHGHGF</h3>
+            <div class="">text area</div>
+            <div class="">text area</div>
+            <div class="">text area</div>
+            <div class="">text area</div>
+        </v-col>
       </div>
     </v-flex>
     <!-- e: skill -->
 
-    <!-- s: what -->
+    <v-carousel
+      v-model="model"
+      cycle
+      hide-delimiter-background
+      class="profile_carousel"
+    >
+      <v-carousel-item v-for="(slide, i) in slides" :key="i">
+        <v-sheet :color="colors[i]" height="100%">
+          <v-row class="fill-height" align="center" justify="center">
+            <div class="display-3">{{ slide }}</div>
+          </v-row>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
+
+    <!-- s: portfolio -->
     <v-flex
       xs12
       border
-      class="section portfolio_wrap bg-color4 mx-height d-flex justify-center align-center pa-6"
+      class="section portfolio_wrap mx-height d-flex justify-center align-center"
     >
-      <div class="content_wrap">
-        <h2>portfolio</h2>
-        <div class="d-flex flex-wrap">
-          <v-card
-            class="mx-auto col-sm-5 col-xs-12"
-            color="grey lighten-4"
-            max-width="600"
-            v-for="(item, i) in items"
-            :key="i"
-          >
-            <v-img :aspect-ratio="16 / 9" :src="item.src"> </v-img>
-            <v-card-text class="pt-6" style="position: relative;">
-              <v-btn
-                absolute
-                color="orange"
-                class="white--text"
-                fab
-                large
-                right
-                top
-                :href="item.href"
-              >
-                <span class="github-icon"></span>
-                <!-- <v-icon>reply</v-icon> -->
-                <!-- <img
-                  src="https://api.iconify.design/mdi-github.svg"
-                  alt="github"
-                /> -->
-              </v-btn>
-              <div
-                class="font-weight-light grey--text title mb-2"
-                v-text="item.grayTitle"
-              ></div>
-              <h3
-                class="display-1 font-weight-light orange--text mb-2"
-                v-text="item.orangeTitle"
-              ></h3>
-              <div
-                class="font-weight-light title mb-2"
-                v-text="item.text"
-              ></div>
-              <div class="demo_btn">
-                <v-btn
-                  class="ma-2"
-                  outlined
-                  color="red darken-3"
-                  :href="item.mainDemo"
-                  >Main Page</v-btn
-                >
-                <v-btn
-                  class="ma-2"
-                  outlined
-                  color="blue darken-4"
-                  :href="item.subDemo"
-                  >Sub Page</v-btn
-                >
-              </div>
-            </v-card-text>
+      <div class="content_wrap content_page3 d-flex justify-sm-space-between row">
+        <h2 class="d-flex">portfolio</h2>
+        <v-col class="col-xs-12 col-sm-3">dafdadf</v-col>
+        <v-col class="d-flex flex-wrap col-xs-12 col-sm-9">
+          <v-card>
+            최근작업물 구방!
           </v-card>
-        </div>
+          <v-col 
+            v-for="card in cards"
+            :key="card.title"
+            :cols="card.flex"
+          >
+            <v-card class="realtive version1">
+              <v-img
+                :src="card.src"
+                class="white--text align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                height="400px"
+              >
+                <v-card-title class="pb-0" v-text="card.title"></v-card-title>
+                <v-card-actions>
+                  <v-btn
+                    color="white"
+                    text
+                    :href="card.mainDemo"
+                  >
+                    main demo
+                  </v-btn>
+
+                  <v-btn
+                    color="white"
+                    text
+                    :href="card.subDemo"
+                  >
+                    sub demo
+                  </v-btn>
+                  <v-btn
+                    absolute
+                    color="blue-grey darken-3 github_icon"
+                    class="white--text"
+                    fab
+                    medium
+                    :href="card.github"
+                  >
+                  </v-btn>
+                </v-card-actions>
+              </v-img>
+            </v-card>
+          </v-col>
+        </v-col>
       </div>
     </v-flex>
-    <!-- e: what -->
+    <!-- e: portfolio -->
 
-    <v-flex>
-      <v-bottom-navigation v-model="bottomNav">
-        <v-btn value="recent">
-          <span>Recent</span>
-          <v-icon>history</v-icon>
-        </v-btn>
-
-        <v-btn value="favorites">
-          <span>Favorites</span>
-          <v-icon>heart</v-icon>
-        </v-btn>
-
-        <v-btn value="nearby">
-          <span>Nearby</span>
-          <v-icon>map-marker</v-icon>
-        </v-btn>
-      </v-bottom-navigation>
-    </v-flex>
   </v-layout>
 </template>
 
 <script>
 export default {
   data: () => ({
+    model: 0,
     colors: [
-      "brown lighten-5",
-      "brown lighten-4",
-      "brown lighten-3",
-      "brown lighten-2",
-      "brown lighten-1",
+      "indigo",
+      "warning",
+      "pink darken-2",
+      "red lighten-1",
+      "deep-purple accent-4",
     ],
+    slides: ["하나", "둘", "세엣", "넷"],
     bottomNav: "recent",
-    items: [
+    cards: [
       {
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        href: "https://9bang.kr/home",
-        grayTitle: "Foster the People",
-        orangeTitle: "구방",
-        text: "ajkdfadjfkajdlfjadkfd",
-        mainDemo: "https://9bang.kr/home",
-        subDemo: "https://biz.9bang.kr/r/gubangs",
-      },
-      {
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        href: "https://4004103.github.io/d10th/",
-        grayTitle: "Foster the People",
-        orangeTitle: "동천 10th",
-        text: "ajkdfadjfkajdlfjadkfd",
+        title: "동천 10th",
+        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",  
+        github: "https://github.com/4004103/d10th/tree/develop",
         mainDemo: "https://4004103.github.io/d10th/",
         subDemo: "https://4004103.github.io/d10th/index_today.html",
+        flex: 12,
       },
       {
+        title: "Jive Solutions",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        href: "https://4004103.github.io/jive/",
-        grayTitle: "ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ",
-        orangeTitle: "Jive Solutions",
-        text: "ㅉㅉㅉㅉㅉㅉㅈ",
+        github: "https://github.com/4004103/jive/tree/develop",
         mainDemo: "https://4004103.github.io/jive/",
         subDemo: "https://4004103.github.io/jive/sub01.html",
+        flex: 6,
       },
       {
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        href: "https://4004103.github.io/diversity/",
-        grayTitle: "3",
-        orangeTitle: "한국다양성연구소",
-        text: "ㅉㅉㅉㅉㅉㅉㅈ",
+        title: "한국다양성연구소",
+        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",        
+        github: "https://github.com/4004103/diversity/tree/develop",
         mainDemo: "https://4004103.github.io/diversity/",
         subDemo: "https://4004103.github.io/diversity/sub01.html",
+        flex: 6,
       },
       {
+        title: "SuperBook Korea",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        href: "https://4004103.github.io/superbook/",
-        grayTitle: "4",
-        orangeTitle: "Superbook Korea",
-        text: "ㅉㅉㅉㅉㅉㅉㅈ",
+        github: "https://github.com/4004103/superbook/tree/develop",        
         mainDemo: "https://4004103.github.io/superbook/",
         subDemo: "https://4004103.github.io/superbook/sub01.html",
+        flex: 12,
       },
       {
+        title: "Good News",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        href: "https://4004103.github.io/goodnews/",
-        grayTitle: "4",
-        orangeTitle: "Good News",
-        text: "ㅉㅉㅉㅉㅉㅉㅈ",
+        github: "https://github.com/4004103/goodnews/tree/develop",        
         mainDemo: "https://4004103.github.io/goodnews/",
         subDemo: "https://4004103.github.io/goodnews/sub01.html",
+        flex: 6,
       },
       {
+        title: "한국장애인연맹",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        href: "https://4004103.github.io/dpi/",
-        grayTitle: "4",
-        orangeTitle: "한국장애인연맹",
-        text: "ㅉㅉㅉㅉㅉㅉㅈ",
+        github: "https://github.com/4004103/dpi/tree/develop",        
         mainDemo: "https://4004103.github.io/dpi/",
         subDemo: "https://4004103.github.io/dpi/sub01.html",
+        flex: 6,
       },
       {
+        title: "BF World",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        href: "https://4004103.github.io/bfworld/",
-        grayTitle: "4",
-        orangeTitle: "BF World",
-        text: "ㅉㅉㅉㅉㅉㅉㅈ",
+        github: "https://github.com/4004103/bfworld/tree/develop",        
         mainDemo: "https://4004103.github.io/bfworld/",
         subDemo: "https://4004103.github.io/bfworld/sub01.html",
+        flex: 12,
       },
       {
+        title: "창원시사회적경제지원센터",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        href: "https://4004103.github.io/cwsec/",
-        grayTitle: "4",
-        orangeTitle: "창원시사회적경제지원센터",
-        text: "ㅉㅉㅉㅉㅉㅉㅈ",
+        github: "https://github.com/4004103/cwsec/tree/develop",        
         mainDemo: "https://4004103.github.io/cwsec/",
         subDemo: "https://4004103.github.io/cwsec/sub01.html",
+        flex: 6,
       },
       {
+        title: "비비시스터즈 워킹투어",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        href: "https://4004103.github.io/bbsisters/",
-        grayTitle: "4",
-        orangeTitle: "비비시스터즈",
-        text: "ㅉㅉㅉㅉㅉㅉㅈ",
+        github: "https://github.com/4004103/bbsisters/tree/develop",        
         mainDemo: "https://4004103.github.io/bbsisters/",
         subDemo: "https://4004103.github.io/bbsisters/sub01.html",
+        flex: 6,
       },
     ],
   }),

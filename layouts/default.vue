@@ -46,13 +46,15 @@
     <v-app-bar
       app
       hide-on-scroll
-      color="rgba(255, 255, 255, 0.5)"
-      class="appbar_wrap"
+      color="rgba(255, 255, 255)"
+      class="appbar_wrap d-flex justify-center"
     >
-      <a href="/">
-        SU A JO
-      </a>
-      <v-toolbar-title>안녕하세요, 조수아입니다.</v-toolbar-title>
+      <nuxt-link to="/">
+        <span>SU A</span><span class="gray"> JO</span>
+      </nuxt-link>
+      <v-toolbar-title class="m_none"
+        >안녕하세요, 조수아입니다.</v-toolbar-title
+      >
       <!-- -->
     </v-app-bar>
 
@@ -69,8 +71,15 @@
       </v-container>
     </v-content>
 
-    <v-footer app>
-      <!-- -->
+    <v-footer app class="user_footer" max-width="1000px" color="white">
+      <v-flex class="row">
+        <v-col col-4>
+          LOGO
+        </v-col>
+        <v-col col-8>
+          전화번호 이메일 깃헙주소 Etc
+        </v-col>
+      </v-flex>
     </v-footer>
     <v-snackbar v-model="countHasBeenUpdated" :timeout="3000" bottom right>
       count has been changed

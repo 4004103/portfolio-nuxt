@@ -1,7 +1,8 @@
+/*  Font
+    ===================================================================== */
 // English Font
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
-// Font
 @font-face {
     font-family: 'Noto Sans KR';
     font-style: normal;
@@ -50,37 +51,31 @@ html,
 body,
 .v-application .v-application--wrap {
     font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff;
 }
 
-.user_layout .container {
-    padding-top: 0;
-    padding-bottom: 0;
+.user_layout {
+    .container {
+        padding: 0;
+    }
+
+    .section {
+        max-width: 1000px;
+    }
 }
 
+/*  Color 기본 
+    ===================================================================== */
+// Appbar First name Color
+$gray-color: #BDBDBD;
 
-.bg-color1 {
-    // 연노랑
-    background-color: #f7e1ad;
-}
-
-.bg-color2 {
-    // 연초록
-    background-color: #c4d2ac;
-}
-
-.bg-color3 {
-    // 연분홍
-    background-color: #f7d5c9;
-}
-
-.bg-color4 {
-    // 연주황
-    background-color: #df9a71;
+.gray--text {
+    color: $gray-color;
 }
 
 // hieght 100 vh
 .mx-height {
-    min-height: 100vh;
+    height: 100%;
 }
 
 // accessibility hidden
@@ -94,6 +89,11 @@ body,
 }
 
 .appbar_wrap {
+    .v-toolbar__content {
+        max-width: 1000px;
+        width: 100%;
+    }
+
     .v-toolbar__title {
         font-size: 1rem;
     }
@@ -109,79 +109,79 @@ body,
         font-size: 1.25rem;
         font-weight: 700;
     }
+
+    .gray {
+        color: $gray-color;
+    }
 }
 
-// 섹션 안 컨텐츠 테두리 스타일
-.content_wrap {
+/*  섹션 안 컨텐츠 공통
+    ===================================================================== */
+.user_layout .content_wrap {
     width: 1000px;
-    padding: 2em;
-    border-radius: 1em;
-    background-color: rgba(255, 255, 255, .5);
+    max-width: 1000px;
+    padding: 7em 3em;
+
 }
 
 // title 공통 스타일
 .section .content_wrap h2 {
-    font-size: 40px;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-    text-shadow: 0px 5px 5px #757474;
-    position: relative;
+    font-size: 3rem;
     text-transform: uppercase;
-    font-family: 'Kaushan Script', cursive;
-
-
-    &:after {
-        content: "";
-        color: inherit;
-        position: absolute;
-        bottom: 0;
-        left: calc(50% - 17px);
-        font-size: 20px;
-        opacity: inherit;
-    }
+    margin-bottom: 1em;
+    font-family: 'Allerta Stencil', 'Noto Sans KR', sans-serif;
 }
 
 
-// 컨텐츠 ===========================================================
+// mobile none
+@media (max-width: 320px) {
+    .m_none {
+        display: none;
+    }
+}
 
+/*  Content Style
+    ===================================================================== */
+// main image
+.main_img {
+    height: 70vh;
+}
 
-// main page
 .content_page_main {
     width: 100%;
-    height: 70%;
+    height: 100%;
     position: relative;
     z-index: 1;
+    line-height: 1;
 
     .greeting {
         width: 100%;
         height: 100%;
+        max-width: 1000px;
+        padding: 3em;
         position: relative;
         z-index: 1;
-        color: #fff;
         font-weight: bold;
-        font-size: 4rem;
-        font-style: italic;
-        opacity: .7;
-        text-align: center;
+        font-family: 'Allerta Stencil', 'Noto Sans KR', sans-serif;
 
-    }
+        h2 {
+            font-size: 4em
+        }
 
-    &:before {
-        content: "";
-        width: 90%;
-        height: 90%;
-        position: absolute;
-        top: auto;
-        left: calc(100% - 95%);
-        border: 2px solid #fff;
-        z-index: 1;
-        opacity: .7;
+        .info_text {
+            font-size: 3.8em;
+        }
+
+        .skill_text {
+            font-size: 2em;
+            line-height: 1.25;
+        }
+
     }
 
     &:after {
         content: '';
-        background-image: url("https://images.unsplash.com/photo-1441371884467-a92d44ae82c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1566&q=80");
+        background-image: url("https://images.unsplash.com/photo-1575866205813-76f62bf5120b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -192,25 +192,65 @@ body,
         left: 0;
         z-index: 0;
         filter: brightness(0.9);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 }
 
-.content_page_text {
-    width: 100%;
-    height: 30%;
+// profile
+.content_page1 {
+    $delimiter: balck;
+
+    .profile_carousel {
+        color: red;
+    }
+
+    .right-side_box {
+        span {
+            font-weight: bold;
+            font-size: 3em;
+            writing-mode: vertical-rl;
+        }
+    }
 }
 
 // skill
-.skill_wrap .html {
-    width: 50px;
-    height: 50px;
-    //background-image: url(/static/images/skill_icon.png);
+.skill_wrap {
+    .skill_text {
+        h3 {
+            font-size: 2.5em;
+        }
+    }
 }
 
-.github-icon:after {
-    content: '';
-    width: 50px;
-    height: 50px;
-    display: flex;
-    background: url('https://api.iconify.design/mdi:github.svg?color=%23fff') no-repeat center center / contain;
+
+// portfolio
+.portfolio_wrap .content_page3 {
+    h2 {
+        width: 100%;
+    }
+
+    // 2018-2019 포트폴리오 v-card
+    .version1 {
+        .github_icon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            &:after {
+                content: '';
+                width: 30px;
+                height: 30px;
+                display: flex;
+                background: url('https://api.iconify.design/mdi:github.svg?color=%23fff') no-repeat center center / contain;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+// footer 
+.user_footer {
+    margin: 0 auto;
+    border-top: 5px solid #000;
 }
