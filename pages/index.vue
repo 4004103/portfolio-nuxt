@@ -38,20 +38,29 @@
       <v-col
         class="content_wrap content_page1 d-flex justify-sm-space-between row"
       >
-        <v-col class="d-flex col-12 col-sm-9 flex-column justify-sm-space-between">
+        <v-col
+          class="d-flex col-12 col-sm-9 flex-column justify-sm-space-between"
+        >
           <h2>profile</h2>
           <div>
-            이상의 열매를 눈이 위하여서, 봄날의 방황하였으며, 청춘 얼마나 것이다. 무엇이 가진 만천하의 그들의 위하여서. 속잎나고, 위하여 아니더면, 구하기 이상을 않는 청춘을 뜨거운지라, 위하여서. 내는 위하여서, 이상, 관현악이며, 심장은 가지에 인간에 지혜는 교향악이다. 그들의 많이 남는 방지하는 이상을 위하여 이상 속에서 것이다.
+            영원히 무한한 같이, 그들을 같이 주며, 인생을 교향악이다. 웅대한
+            이상은 얼마나 말이다. 사는가 황금시대의 위하여, 칼이다. 이상의
+            곳으로 듣기만 것은 얼음과 오아이스도 얼음 어디 것이다. 착목한는
+            가치를 끓는 원대하고, 황금시대다. 열락의 물방아 풍부하게 보이는
+            뜨거운지라, 위하여서.
+            <br />
+            이성은 온갖 그들에게 생명을 풍부하게 아름답고 때에, 청춘의 것이다.
+            가장 듣기만 인생을 사막이다. 이상은 능히 꾸며 굳세게 청춘을 눈이
+            모래뿐일 있는가? 만물은 생생하며, 불어 과실이 몸이 이상의 사랑의
+            교향악이다. 봄바람을 사라지지 수 부패뿐이다. 피고, 우리의 품었기
+            풍부하게 더운지라 용감하고 운다. 찾아다녀도, 피고, 대고, 뛰노는 우는
+            영락과 싹이 것이다.
           </div>
         </v-col>
         <v-col
           class="grey lighten-3 pa-4 pa-sm-6 d-flex col-12 col-sm-3 col-offset-1 flex-column justify-sm-space-between right-side_box"
         >
-          <span class="mb-6">Hello ! </span>
-          <p>
-            안녕하세요,</br>
-            웹 퍼블리셔 조수아입니다.
-          </p>
+          <span class="lie_text mb-6">Hello ! </span>
         </v-col>
       </v-col>
     </v-flex>
@@ -63,39 +72,33 @@
       border
       class="section skill_wrap mx-height d-flex justify-center align-center"
     >
-      <div class="content_wrap content_page2 d-flex justify-sm-space-between row">
-        <v-col class="col-sm-9 col-xs-12">            
-          <v-img 
+      <div
+        class="content_wrap content_page2 d-flex justify-sm-space-between row"
+      >
+        <v-col class="col-sm-9 col-xs-12">
+          <v-img
+            max-width="100%"
             src="https://images.unsplash.com/photo-1598120719213-fd32e04101da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
             class="me"
           ></v-img>
           <h2>skill</h2>
         </v-col>
         <v-col class="d-flex col-12 col-sm-3 flex-column skill_text">
-            <h3>ASDFGHGHGF</h3>
-            <div class="">text area</div>
-            <div class="">text area</div>
-            <div class="">text area</div>
-            <div class="">text area</div>
+          <h3>제가 자신 있는 일은요,</h3>
+          <v-list-item two-line class="flex-column skill_list">
+            <v-list-item-content
+              v-for="text in test"
+              :key="text.title"
+              clas="align-start"
+            >
+              <v-list-item-title v-text="text.title"></v-list-item-title>
+              <v-list-item-subtitle v-text="text.second"></v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
         </v-col>
       </div>
     </v-flex>
     <!-- e: skill -->
-
-    <v-carousel
-      v-model="model"
-      cycle
-      hide-delimiter-background
-      class="profile_carousel"
-    >
-      <v-carousel-item v-for="(slide, i) in slides" :key="i">
-        <v-sheet :color="colors[i]" height="100%">
-          <v-row class="fill-height" align="center" justify="center">
-            <div class="display-3">{{ slide }}</div>
-          </v-row>
-        </v-sheet>
-      </v-carousel-item>
-    </v-carousel>
 
     <!-- s: portfolio -->
     <v-flex
@@ -103,18 +106,29 @@
       border
       class="section portfolio_wrap mx-height d-flex justify-center align-center"
     >
-      <div class="content_wrap content_page3 d-flex justify-sm-space-between row">
+      <div
+        class="content_wrap content_page3 d-flex justify-sm-space-between row"
+      >
         <h2 class="d-flex">portfolio</h2>
-        <v-col class="col-xs-12 col-sm-3">dafdadf</v-col>
-        <v-col class="d-flex flex-wrap col-xs-12 col-sm-9">
+
+        <v-col class="d-flex flex-wrap col-xs-12 col-sm-8 mb-12">
           <v-card>
-            최근작업물 구방!
+            <v-img
+              max-width="100%"
+              src="https://w7.pngwing.com/pngs/978/906/png-transparent-silver-imac-illustration-macbook-pro-imac-apple-computer-desktop-pc-template-angle-electronics.png"
+            ></v-img>
           </v-card>
-          <v-col 
-            v-for="card in cards"
-            :key="card.title"
-            :cols="card.flex"
-          >
+        </v-col>
+        <v-col class="col-xs-12 col-sm-4">
+          <h3>Recent Work</h3>
+        </v-col>
+
+        <v-col class="col-xs-12 col-sm-3">
+          <span class="lie_text mb-6">Click!</span>
+          <p>클릭하면 작업물을 더 자세히 볼 수 있습니다!</p>
+        </v-col>
+        <v-col class="d-flex flex-wrap col-xs-12 col-sm-9">
+          <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
             <v-card class="realtive version1">
               <v-img
                 :src="card.src"
@@ -124,19 +138,11 @@
               >
                 <v-card-title class="pb-0" v-text="card.title"></v-card-title>
                 <v-card-actions>
-                  <v-btn
-                    color="white"
-                    text
-                    :href="card.mainDemo"
-                  >
+                  <v-btn color="white" text :href="card.mainDemo">
                     main demo
                   </v-btn>
 
-                  <v-btn
-                    color="white"
-                    text
-                    :href="card.subDemo"
-                  >
+                  <v-btn color="white" text :href="card.subDemo">
                     sub demo
                   </v-btn>
                   <v-btn
@@ -157,26 +163,51 @@
     </v-flex>
     <!-- e: portfolio -->
 
+    <!-- s: contact -->
+    <v-flex
+      xs12
+      border
+      class="section contact mx-height d-flex align-center justify-center"
+    >
+      <v-col
+        class="content_wrap content_page4 d-flex justify-sm-space-between row"
+      >
+        <v-col class="d-flex col-12 flex-column justify-sm-space-between">
+          <h2>함께 일할 퍼블리셔를 찾고 계신가요?</h2>
+          <p>그게 바로 접니다</p>
+          <v-btn href="">이력서</v-btn>
+        </v-col>
+      </v-col>
+    </v-flex>
+    <!-- e: contact -->
   </v-layout>
 </template>
 
 <script>
 export default {
   data: () => ({
-    model: 0,
-    colors: [
-      "indigo",
-      "warning",
-      "pink darken-2",
-      "red lighten-1",
-      "deep-purple accent-4",
+    test: [
+      {
+        title: "시맨틱 마크업",
+        second: "html",
+      },
+      {
+        title: "css",
+        second: "css",
+      },
+      {
+        title: "javascript",
+        second: "공부!",
+      },
+      {
+        title: "협업",
+        second: "제플린, 깃",
+      },
     ],
-    slides: ["하나", "둘", "세엣", "넷"],
-    bottomNav: "recent",
     cards: [
       {
         title: "동천 10th",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",  
+        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
         github: "https://github.com/4004103/d10th/tree/develop",
         mainDemo: "https://4004103.github.io/d10th/",
         subDemo: "https://4004103.github.io/d10th/index_today.html",
@@ -192,7 +223,7 @@ export default {
       },
       {
         title: "한국다양성연구소",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",        
+        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
         github: "https://github.com/4004103/diversity/tree/develop",
         mainDemo: "https://4004103.github.io/diversity/",
         subDemo: "https://4004103.github.io/diversity/sub01.html",
@@ -201,7 +232,7 @@ export default {
       {
         title: "SuperBook Korea",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        github: "https://github.com/4004103/superbook/tree/develop",        
+        github: "https://github.com/4004103/superbook/tree/develop",
         mainDemo: "https://4004103.github.io/superbook/",
         subDemo: "https://4004103.github.io/superbook/sub01.html",
         flex: 12,
@@ -209,7 +240,7 @@ export default {
       {
         title: "Good News",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        github: "https://github.com/4004103/goodnews/tree/develop",        
+        github: "https://github.com/4004103/goodnews/tree/develop",
         mainDemo: "https://4004103.github.io/goodnews/",
         subDemo: "https://4004103.github.io/goodnews/sub01.html",
         flex: 6,
@@ -217,7 +248,7 @@ export default {
       {
         title: "한국장애인연맹",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        github: "https://github.com/4004103/dpi/tree/develop",        
+        github: "https://github.com/4004103/dpi/tree/develop",
         mainDemo: "https://4004103.github.io/dpi/",
         subDemo: "https://4004103.github.io/dpi/sub01.html",
         flex: 6,
@@ -225,7 +256,7 @@ export default {
       {
         title: "BF World",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        github: "https://github.com/4004103/bfworld/tree/develop",        
+        github: "https://github.com/4004103/bfworld/tree/develop",
         mainDemo: "https://4004103.github.io/bfworld/",
         subDemo: "https://4004103.github.io/bfworld/sub01.html",
         flex: 12,
@@ -233,7 +264,7 @@ export default {
       {
         title: "창원시사회적경제지원센터",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        github: "https://github.com/4004103/cwsec/tree/develop",        
+        github: "https://github.com/4004103/cwsec/tree/develop",
         mainDemo: "https://4004103.github.io/cwsec/",
         subDemo: "https://4004103.github.io/cwsec/sub01.html",
         flex: 6,
@@ -241,7 +272,7 @@ export default {
       {
         title: "비비시스터즈 워킹투어",
         src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
-        github: "https://github.com/4004103/bbsisters/tree/develop",        
+        github: "https://github.com/4004103/bbsisters/tree/develop",
         mainDemo: "https://4004103.github.io/bbsisters/",
         subDemo: "https://4004103.github.io/bbsisters/sub01.html",
         flex: 6,

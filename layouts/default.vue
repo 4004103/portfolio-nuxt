@@ -50,7 +50,7 @@
       class="appbar_wrap d-flex justify-center"
     >
       <nuxt-link to="/">
-        <span>SU A</span><span class="gray"> JO</span>
+        <span>SU A</span><span class="gray--text"> JO</span>
       </nuxt-link>
       <v-toolbar-title class="m_none"
         >안녕하세요, 조수아입니다.</v-toolbar-title
@@ -62,28 +62,36 @@
     <v-content class="user_layout">
       <!-- Provides the application the proper gutter -->
       <v-container fluid>
-        <v-card class="mx-auto">
-          <v-card>
-            <nuxt />
-          </v-card>
-        </v-card>
+        <div class="mx-auto">
+          <nuxt />
+        </div>
         <!-- If using vue-router -->
       </v-container>
     </v-content>
 
-    <v-footer app class="user_footer" max-width="1000px" color="white">
-      <v-flex class="row">
-        <v-col col-4>
-          LOGO
+    <v-footer
+      class="user_footer d-flex justify-center"
+      width="100%"
+      max-width="1000px"
+      color="white"
+    >
+      <v-flex class="row footer_wrap justify-center">
+        <v-col class="d-flex flex-column">
+          <div class="mb-12 footer_title">
+            <span>SU A</span><span class="gray--text"> JO</span>
+          </div>
+          <small class="gray--text"
+            ><nuxt-link to="https://github.com/4004103"
+              >github.com/4004103</nuxt-link
+            ></small
+          >
         </v-col>
-        <v-col col-8>
-          전화번호 이메일 깃헙주소 Etc
+        <v-col class="d-flex justify-end">
+          <a href="tel:010-4004-1006" class="mr-6"><v-icon>call</v-icon></a>
+          <a href="e-mail:4004103@naver.com"><v-icon>mail</v-icon></a>
         </v-col>
       </v-flex>
     </v-footer>
-    <v-snackbar v-model="countHasBeenUpdated" :timeout="3000" bottom right>
-      count has been changed
-    </v-snackbar>
   </v-app>
 </template>
 <script lang="ts">

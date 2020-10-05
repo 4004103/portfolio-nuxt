@@ -88,14 +88,17 @@ $gray-color: #BDBDBD;
     clip: rect(1px, 1px, 1px, 1px);
 }
 
+/*  Nav Style
+    ===================================================================== */
 .appbar_wrap {
     .v-toolbar__content {
         max-width: 1000px;
         width: 100%;
+        padding: 0 3em;
     }
 
     .v-toolbar__title {
-        font-size: 1rem;
+        font-size: 1em;
     }
 
     .v-toolbar__content {
@@ -109,18 +112,14 @@ $gray-color: #BDBDBD;
         font-size: 1.25rem;
         font-weight: 700;
     }
-
-    .gray {
-        color: $gray-color;
-    }
 }
 
 /*  섹션 안 컨텐츠 공통
     ===================================================================== */
-.user_layout .content_wrap {
-    width: 1000px;
+.user_layout .content_wrap,
+.v-footer.user_footer {
     max-width: 1000px;
-    padding: 7em 3em;
+    padding: 7em 3em 0;
 
 }
 
@@ -132,6 +131,11 @@ $gray-color: #BDBDBD;
     font-family: 'Allerta Stencil', 'Noto Sans KR', sans-serif;
 }
 
+.lie_text {
+    font-weight: bold;
+    font-size: 3em;
+    writing-mode: vertical-rl;
+}
 
 // mobile none
 @media (max-width: 320px) {
@@ -204,21 +208,24 @@ $gray-color: #BDBDBD;
     .profile_carousel {
         color: red;
     }
-
-    .right-side_box {
-        span {
-            font-weight: bold;
-            font-size: 3em;
-            writing-mode: vertical-rl;
-        }
-    }
 }
 
 // skill
-.skill_wrap {
-    .skill_text {
-        h3 {
-            font-size: 2.5em;
+.content_page2 {
+    h2 {
+        margin-top: -30px;
+        position: relative;
+    }
+
+    .skill_wrap {
+        .skill_text {
+            h3 {
+                font-size: 2.5em;
+            }
+        }
+
+        .skill_list .v-list-item__content {
+            flex: 0 1 auto;
         }
     }
 }
@@ -250,7 +257,20 @@ $gray-color: #BDBDBD;
 }
 
 // footer 
-.user_footer {
+.v-footer.user_footer {
     margin: 0 auto;
-    border-top: 5px solid #000;
+
+    .footer_wrap {
+        border-top: 5px solid #000;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    .footer_title {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
 }
