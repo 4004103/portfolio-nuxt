@@ -13,8 +13,8 @@
     "now-build": "nuxt-ts build --spa",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
-    "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
+    "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt-ts build",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt-ts generate"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "0.3.8",

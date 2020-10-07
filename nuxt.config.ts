@@ -5,7 +5,7 @@ const routerBase =
   process.env.DEPLOY_ENV === "GH_PAGES"
     ? {
         router: {
-          base: "/nuxt-gh-pages-404-reproduction/",
+          base: "/portfolio-nuxt/",
         },
       }
     : {};
