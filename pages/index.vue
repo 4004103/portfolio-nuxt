@@ -75,15 +75,11 @@
       <div
         class="content_wrap content_page2 d-flex justify-sm-space-between row"
       >
-        <v-col class="col-sm-9 col-xs-12">
-          <v-img
-            max-width="100%"
-            src="https://images.unsplash.com/photo-1598120719213-fd32e04101da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
-            class="me"
-          ></v-img>
+        <v-col class="col-sm-7 col-xs-12">
+          <v-img src="../images/profile-img.jpeg" class="me"></v-img>
           <h2>skill</h2>
         </v-col>
-        <v-col class="d-flex col-12 col-sm-3 flex-column skill_text">
+        <v-col class="d-flex col-12 col-sm-5 flex-column skill_text">
           <h3>제가 자신 있는 일은요,</h3>
           <v-list-item two-line class="flex-column skill_list">
             <v-list-item-content
@@ -107,7 +103,7 @@
       class="section portfolio_wrap mx-height d-flex justify-center align-center"
     >
       <div
-        class="content_wrap content_page3 d-flex justify-sm-space-between row"
+        class="content_wrap content_page3 d-flex justify-sm-space-between flex-column row"
       >
         <h2 class="d-flex">portfolio</h2>
 
@@ -125,7 +121,7 @@
 
         <v-col class="col-xs-12 col-sm-3">
           <span class="lie_text mb-6">Click!</span>
-          <p>클릭하면 작업물을 더 자세히 볼 수 있습니다!</p>
+          <p>버튼을 클릭하면 더 자세히 볼 수 있습니다.</p>
         </v-col>
         <v-col class="d-flex flex-wrap col-xs-12 col-sm-9">
           <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
@@ -172,10 +168,10 @@
       <v-col
         class="content_wrap content_page4 d-flex justify-sm-space-between row"
       >
-        <v-col class="d-flex col-12 flex-column justify-sm-space-between">
+        <v-col class="d-flex col-12 flex-column justify-center">
           <h2>함께 일할 퍼블리셔를 찾고 계신가요?</h2>
-          <p>그게 바로 접니다</p>
-          <v-btn href="">이력서</v-btn>
+          <p>#성실한 #책임감 #역량과 경험 #성장하는</p>
+          <v-btn href="" outlined width="200">이력서</v-btn>
         </v-col>
       </v-col>
     </v-flex>
