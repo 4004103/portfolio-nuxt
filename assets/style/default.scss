@@ -96,9 +96,13 @@ body,
     ===================================================================== */
 // Appbar First name Color
 $gray-color: #bdbdbd;
+$black-color: #000;
 
 .gray--text {
   color: $gray-color;
+}
+.black--text {
+  color: $black-color;
 }
 
 // hieght 100 vh
@@ -238,21 +242,32 @@ $gray-color: #bdbdbd;
 }
 
 // skill
-.content_page2 {
-  h2 {
-    margin-top: -30px;
-    position: relative;
-  }
-
-  .skill_wrap {
-    .skill_text {
-      h3 {
-        font-size: 2.5em;
-      }
+.skill_wrap {
+  .content_page2 {
+    h2 {
+      margin-top: -30px;
+      position: relative;
+    }
+    h3 {
+      font-size: 1.7em;
+      font-weight: normal;
     }
 
-    .skill_list .v-list-item__content {
-      flex: 0 1 auto;
+    .skill_list {
+      .v-list-item__title,
+      .v-list-item__subtitle {
+        white-space: normal;
+        font-size: inherit;
+      }
+      .v-list-item__title {
+        flex: 0 1 auto;
+        font-weight: bold;
+        font-size: 1.25em;
+      }
+      .v-list-item__content {
+        flex: 0 1 auto;
+        width: 100%;
+      }
     }
   }
 }
@@ -270,7 +285,7 @@ $gray-color: #bdbdbd;
       right: 10px;
       top: 10px;
 
-      &:after {
+      .v-btn__content:after {
         content: "";
         width: 30px;
         height: 30px;

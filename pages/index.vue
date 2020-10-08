@@ -43,18 +43,20 @@
         >
           <h2>profile</h2>
           <div>
-            영원히 무한한 같이, 그들을 같이 주며, 인생을 교향악이다. 웅대한
-            이상은 얼마나 말이다. 사는가 황금시대의 위하여, 칼이다. 이상의
-            곳으로 듣기만 것은 얼음과 오아이스도 얼음 어디 것이다. 착목한는
-            가치를 끓는 원대하고, 황금시대다. 열락의 물방아 풍부하게 보이는
-            뜨거운지라, 위하여서.
+            안녕하세요! 3년차 웹 퍼블리셔 조수아입니다.<br />
+            쉽고 깔끔한 코드를 표현하는 걸 좋아합니다.<br />
             <br />
-            이성은 온갖 그들에게 생명을 풍부하게 아름답고 때에, 청춘의 것이다.
-            가장 듣기만 인생을 사막이다. 이상은 능히 꾸며 굳세게 청춘을 눈이
-            모래뿐일 있는가? 만물은 생생하며, 불어 과실이 몸이 이상의 사랑의
-            교향악이다. 봄바람을 사라지지 수 부패뿐이다. 피고, 우리의 품었기
-            풍부하게 더운지라 용감하고 운다. 찾아다녀도, 피고, 대고, 뛰노는 우는
-            영락과 싹이 것이다.
+            탄탄한 코드와 유지보수를 위한 컴포넌트 단위의 마크업에 관심이
+            많습니다.<br />
+            <br />
+            사용자의 입장에서 한번 더 생각하고 더 나은 방향을 위해
+            고민합니다.<br />
+            <br />
+            브라우저 위에 그려지는것들이 재미있고 완성된 작업물을 보는 것이
+            뿌듯합니다.<br />
+            <br />
+            차후 프론트엔드로 전향하는 것이 현재 저의 목표입니다.<br />
+            목표를 위해 하루하루 꾸준함을 잃지 않으려 노력합니다.<br />
           </div>
         </v-col>
         <v-col
@@ -76,16 +78,17 @@
         class="content_wrap content_page2 d-flex justify-sm-space-between row"
       >
         <v-col class="col-sm-7 col-xs-12">
-          <v-img src="../images/profile-img.jpeg" class="me"></v-img>
+          <v-img src="./images/profile-img.jpeg" class="me"></v-img>
           <h2>skill</h2>
         </v-col>
         <v-col class="d-flex col-12 col-sm-5 flex-column skill_text">
-          <h3>제가 자신 있는 일은요,</h3>
-          <v-list-item two-line class="flex-column skill_list">
+          <h3 class="mb-8">제가 잘 하는 일은,</h3>
+          <v-list-item two-line class="flex-column skill_list pa-0">
             <v-list-item-content
               v-for="text in test"
               :key="text.title"
-              clas="align-start"
+              clas=""
+              width="100%"
             >
               <v-list-item-title v-text="text.title"></v-list-item-title>
               <v-list-item-subtitle v-text="text.second"></v-list-item-subtitle>
@@ -107,54 +110,58 @@
       >
         <h2 class="d-flex">portfolio</h2>
 
-        <v-col class="d-flex flex-wrap col-xs-12 col-sm-8 mb-12">
-          <v-card>
-            <v-img
-              max-width="100%"
-              src="https://w7.pngwing.com/pngs/978/906/png-transparent-silver-imac-illustration-macbook-pro-imac-apple-computer-desktop-pc-template-angle-electronics.png"
-            ></v-img>
-          </v-card>
-        </v-col>
-        <v-col class="col-xs-12 col-sm-4">
-          <h3>Recent Work</h3>
-        </v-col>
-
-        <v-col class="col-xs-12 col-sm-3">
-          <span class="lie_text mb-6">Click!</span>
-          <p>버튼을 클릭하면 더 자세히 볼 수 있습니다.</p>
-        </v-col>
-        <v-col class="d-flex flex-wrap col-xs-12 col-sm-9">
-          <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-            <v-card class="realtive version1">
+        <div class="row d-flex flex-column flex-sm-row">
+          <v-col class="d-flex flex-wrap col-xs-12 col-sm-8 mb-12">
+            <v-card>
               <v-img
-                :src="card.src"
-                class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                height="400px"
-              >
-                <v-card-title class="pb-0" v-text="card.title"></v-card-title>
-                <v-card-actions>
-                  <v-btn color="white" text :href="card.mainDemo">
-                    main demo
-                  </v-btn>
-
-                  <v-btn color="white" text :href="card.subDemo">
-                    sub demo
-                  </v-btn>
-                  <v-btn
-                    absolute
-                    color="blue-grey darken-3 github_icon"
-                    class="white--text"
-                    fab
-                    medium
-                    :href="card.github"
-                  >
-                  </v-btn>
-                </v-card-actions>
-              </v-img>
+                max-width="100%"
+                src="https://w7.pngwing.com/pngs/978/906/png-transparent-silver-imac-illustration-macbook-pro-imac-apple-computer-desktop-pc-template-angle-electronics.png"
+              ></v-img>
             </v-card>
           </v-col>
-        </v-col>
+          <v-col class="col-xs-12 col-sm-4">
+            <h3>Recent Work</h3>
+          </v-col>
+        </div>
+
+        <div class="row">
+          <v-col class="col-xs-12 col-sm-3">
+            <span class="lie_text mb-6">Click!</span>
+            <p>버튼을 클릭하면 더 자세히 볼 수 있습니다.</p>
+          </v-col>
+          <v-col class="d-flex flex-wrap col-xs-12 col-sm-9">
+            <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+              <v-card class="realtive version1">
+                <v-img
+                  :src="card.src"
+                  class="white--text align-end"
+                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                  height="400px"
+                >
+                  <v-card-title class="pb-0" v-text="card.title"></v-card-title>
+                  <v-card-actions>
+                    <v-btn color="white" text :href="card.mainDemo">
+                      main demo
+                    </v-btn>
+
+                    <v-btn color="white" text :href="card.subDemo">
+                      sub demo
+                    </v-btn>
+                    <v-btn
+                      absolute
+                      color="blue-grey darken-3 github_icon"
+                      class="white--text"
+                      fab
+                      medium
+                      :href="card.github"
+                    >
+                    </v-btn>
+                  </v-card-actions>
+                </v-img>
+              </v-card>
+            </v-col>
+          </v-col>
+        </div>
       </div>
     </v-flex>
     <!-- e: portfolio -->
@@ -184,20 +191,21 @@ export default {
   data: () => ({
     test: [
       {
-        title: "시맨틱 마크업",
-        second: "html",
+        title: "Markup",
+        second: "웹 표준을 준수하며 꼼꼼한 시멘틱 마크업을 합니다.",
       },
       {
-        title: "css",
-        second: "css",
+        title: "Development",
+        second: "웹 퍼블리싱을 이해하고 잘 다룹니다.",
       },
       {
-        title: "javascript",
-        second: "공부!",
+        title: "Skill",
+        second: "Git, Zeplin, Sass등 협업을 위한 지식을 배우고 적용합니다.",
       },
       {
-        title: "협업",
-        second: "제플린, 깃",
+        title: "Co-work",
+        second:
+          "개발자, 디자이너와 함께 일하며 원활한 협업을 위해 노력합니다. ",
       },
     ],
     cards: [
