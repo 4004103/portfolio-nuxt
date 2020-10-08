@@ -81,9 +81,7 @@
             <span>SU A</span><span class="gray--text"> JO</span>
           </div>
           <small class="gray--text"
-            ><nuxt-link to="https://github.com/4004103"
-              >github.com/4004103</nuxt-link
-            ></small
+            ><a href="https://github.com/4004103">github.com/4004103</a></small
           >
         </v-col>
         <v-col class="d-flex justify-end">

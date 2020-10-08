@@ -161,6 +161,7 @@ $black-color: #000;
   text-transform: uppercase;
   margin-bottom: 1em;
   font-family: "Allerta Stencil", "Noto Sans KR", sans-serif;
+  word-break: break-all;
 }
 
 .lie_text {
@@ -170,7 +171,7 @@ $black-color: #000;
 }
 
 // mobile none
-@media (max-width: 320px) {
+@media (max-width: 599px) {
   .m_none {
     display: none;
   }
@@ -295,6 +296,11 @@ $black-color: #000;
         box-shadow: none;
       }
     }
+  }
+}
+@media (max-width: 599px) {
+  .portfolio_wrap .content_page3 .lie_text {
+    writing-mode: inherit;
   }
 }
 

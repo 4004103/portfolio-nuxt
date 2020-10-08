@@ -106,12 +106,11 @@
       class="section portfolio_wrap mx-height d-flex justify-center align-center"
     >
       <div
-        class="content_wrap content_page3 d-flex justify-sm-space-between flex-column row"
+        class="content_wrap content_page3 d-flex justify-sm-space-between flex-column"
       >
-        <h2 class="d-flex">portfolio</h2>
-
-        <div class="row d-flex flex-column flex-sm-row">
-          <v-col class="d-flex flex-wrap col-xs-12 col-sm-8 mb-12">
+        <h2 class="d-flex col-12 pa-0">portfolio</h2>
+        <div class="d-flex justify-sm-space-between row">
+          <v-col class="d-flex flex-wrap col-xs-12 col-sm-8 mb-0 mb-sm-12">
             <v-card>
               <v-img
                 max-width="100%"
@@ -119,12 +118,12 @@
               ></v-img>
             </v-card>
           </v-col>
-          <v-col class="col-xs-12 col-sm-4">
+          <v-col class="col-xs-12 col-sm-4 mb-12 mb-sm-0">
             <h3>Recent Work</h3>
           </v-col>
         </div>
 
-        <div class="row">
+        <div class="d-flex justify-sm-space-between flex-xs-column row">
           <v-col class="col-xs-12 col-sm-3">
             <span class="lie_text mb-6">Click!</span>
             <p>버튼을 클릭하면 더 자세히 볼 수 있습니다.</p>
@@ -138,8 +137,11 @@
                   gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                   height="400px"
                 >
-                  <v-card-title class="pb-0" v-text="card.title"></v-card-title>
-                  <v-card-actions>
+                  <v-card-title
+                    class="pb-0 justify-center justify-sm-start"
+                    v-text="card.title"
+                  ></v-card-title>
+                  <v-card-actions class="d-flex flex-column flex-sm-row">
                     <v-btn color="white" text :href="card.mainDemo">
                       main demo
                     </v-btn>
@@ -211,7 +213,7 @@ export default {
     cards: [
       {
         title: "동천 10th",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
+        src: "./images/d10th.png",
         github: "https://github.com/4004103/d10th/tree/develop",
         mainDemo: "https://4004103.github.io/d10th/",
         subDemo: "https://4004103.github.io/d10th/index_today.html",
@@ -219,7 +221,7 @@ export default {
       },
       {
         title: "Jive Solutions",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
+        src: "./images/jive.png",
         github: "https://github.com/4004103/jive/tree/develop",
         mainDemo: "https://4004103.github.io/jive/",
         subDemo: "https://4004103.github.io/jive/sub01.html",
@@ -227,7 +229,7 @@ export default {
       },
       {
         title: "한국다양성연구소",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
+        src: "./images/diversity.png",
         github: "https://github.com/4004103/diversity/tree/develop",
         mainDemo: "https://4004103.github.io/diversity/",
         subDemo: "https://4004103.github.io/diversity/sub01.html",
@@ -235,7 +237,7 @@ export default {
       },
       {
         title: "SuperBook Korea",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
+        src: "./images/superbook.png",
         github: "https://github.com/4004103/superbook/tree/develop",
         mainDemo: "https://4004103.github.io/superbook/",
         subDemo: "https://4004103.github.io/superbook/sub01.html",
@@ -243,7 +245,7 @@ export default {
       },
       {
         title: "Good News",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
+        src: "./images/goodnews.png",
         github: "https://github.com/4004103/goodnews/tree/develop",
         mainDemo: "https://4004103.github.io/goodnews/",
         subDemo: "https://4004103.github.io/goodnews/sub01.html",
@@ -251,7 +253,7 @@ export default {
       },
       {
         title: "한국장애인연맹",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
+        src: "./images/dpi.png",
         github: "https://github.com/4004103/dpi/tree/develop",
         mainDemo: "https://4004103.github.io/dpi/",
         subDemo: "https://4004103.github.io/dpi/sub01.html",
@@ -259,7 +261,7 @@ export default {
       },
       {
         title: "BF World",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
+        src: "./images/bfworld.png",
         github: "https://github.com/4004103/bfworld/tree/develop",
         mainDemo: "https://4004103.github.io/bfworld/",
         subDemo: "https://4004103.github.io/bfworld/sub01.html",
@@ -267,7 +269,7 @@ export default {
       },
       {
         title: "창원시사회적경제지원센터",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
+        src: "./images/cwsec.png",
         github: "https://github.com/4004103/cwsec/tree/develop",
         mainDemo: "https://4004103.github.io/cwsec/",
         subDemo: "https://4004103.github.io/cwsec/sub01.html",
@@ -275,7 +277,7 @@ export default {
       },
       {
         title: "비비시스터즈 워킹투어",
-        src: "https://cdn.vuetifyjs.com/images/cards/kitchen.png",
+        src: "./images/bbsisters.png",
         github: "https://github.com/4004103/bbsisters/tree/develop",
         mainDemo: "https://4004103.github.io/bbsisters/",
         subDemo: "https://4004103.github.io/bbsisters/sub01.html",
