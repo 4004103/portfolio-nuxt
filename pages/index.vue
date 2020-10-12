@@ -193,7 +193,14 @@
           class="d-flex col-12 flex-column justify-center align-center pa-0"
         >
           <h2>함께 일할 퍼블리셔를 찾고 계신가요?</h2>
-          <p>#성실한 #책임감 #역량과 경험 #성장하는</p>
+          <v-list-item v-for="list in publist" :key="list.title">
+            <v-list-item-content>
+              <v-list-item-title
+                ><v-icon class="black--text mr-4" size="16px">check</v-icon
+                >{{ list }}</v-list-item-title
+              >
+            </v-list-item-content>
+          </v-list-item>
           <v-btn href="" outlined width="200">이력서</v-btn>
         </v-col>
       </v-col>
@@ -297,6 +304,11 @@ export default {
         subDemo: "https://4004103.github.io/bbsisters/sub01.html",
         flex: 6,
       },
+    ],
+    publist: [
+      "경험을 갖춘 퍼블리셔",
+      "책임감있고 성실한 사람",
+      "성장하며 시너지를 발휘하는 팀원",
     ],
   }),
 };
