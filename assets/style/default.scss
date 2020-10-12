@@ -188,7 +188,7 @@ $black-color: #000;
 
   .section .content_wrap h2 {
     // section title
-    font-size: 2em;
+    font-size: 2.6em;
   }
 }
 
@@ -251,13 +251,13 @@ $black-color: #000;
 @media (max-width: 559px) {
   // mobile main img height 100vh.
   .main_img {
-    height: 100vh;
+    height: 80vh;
   }
 
   .content_page_main .greeting {
     padding: 2em;
     h2 {
-      font-size: 2em;
+      font-size: 2.6em;
     }
 
     .info_text {

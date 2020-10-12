@@ -50,7 +50,7 @@
       class="appbar_wrap d-flex justify-center"
     >
       <nuxt-link to="/">
-        <span color="black--text">SU A</span><span class="gray--text"> JO</span>
+        <span class="black--text">SU A</span><span class="gray--text"> JO</span>
       </nuxt-link>
       <v-toolbar-title class="m_none"
         >안녕하세요, 조수아입니다.</v-toolbar-title
