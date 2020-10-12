@@ -13,7 +13,7 @@ const routerBase =
 export default {
   /** Build configuration */
   build: {
-    publicPath: "/_del/",
+    publicPath: "/assets/",
     extend(config: any, context: Context) {
       if (context.isDev && !process.client) {
         config.module.rules.push({

@@ -146,6 +146,16 @@ $black-color: #000;
   }
 }
 
+@media (max-width: 599px) {
+  .appbar_wrap .v-toolbar__content {
+    padding: 4px 2em;
+  }
+  .user_layout .content_wrap,
+  .v-footer.user_footer {
+    padding: 7em 2em 0 !important;
+  }
+}
+
 /*  섹션 안 컨텐츠 공통
     ===================================================================== */
 .user_layout .content_wrap,
@@ -157,7 +167,7 @@ $black-color: #000;
 
 // title 공통 스타일
 .section .content_wrap h2 {
-  font-size: 3rem;
+  font-size: 3em;
   text-transform: uppercase;
   margin-bottom: 1em;
   font-family: "Allerta Stencil", "Noto Sans KR", sans-serif;
@@ -174,6 +184,11 @@ $black-color: #000;
 @media (max-width: 599px) {
   .m_none {
     display: none;
+  }
+
+  .section .content_wrap h2 {
+    // section title
+    font-size: 2em;
   }
 }
 
@@ -230,6 +245,28 @@ $black-color: #000;
     filter: brightness(0.9);
     background-attachment: fixed;
     background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 559px) {
+  // mobile main img height 100vh.
+  .main_img {
+    height: 100vh;
+  }
+
+  .content_page_main .greeting {
+    padding: 2em;
+    h2 {
+      font-size: 2em;
+    }
+
+    .info_text {
+      font-size: 1.8em;
+    }
+
+    .skill_text {
+      font-size: 1em;
+    }
   }
 }
 
@@ -301,6 +338,7 @@ $black-color: #000;
 @media (max-width: 599px) {
   .portfolio_wrap .content_page3 .lie_text {
     writing-mode: inherit;
+    font-size: 2em;
   }
 }
 
@@ -320,5 +358,11 @@ $black-color: #000;
   .footer_title {
     font-size: 1.25rem;
     font-weight: 700;
+  }
+}
+@media (max-width: 599px) {
+  .v-footer.user_footer {
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }

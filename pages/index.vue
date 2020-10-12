@@ -128,9 +128,9 @@
             <span class="lie_text mb-6">Click!</span>
             <p>버튼을 클릭하면 더 자세히 볼 수 있습니다.</p>
           </v-col>
-          <v-col class="d-flex flex-wrap col-xs-12 col-sm-9">
+          <v-col class="d-flex flex-wrap col-xs-12 col-sm-9 pa-0">
             <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-              <v-card class="realtive version1">
+              <v-card class="realtive version1 col-xs-12">
                 <v-img
                   :src="card.src"
                   class="white--text align-end"
@@ -142,11 +142,25 @@
                     v-text="card.title"
                   ></v-card-title>
                   <v-card-actions class="d-flex flex-column flex-sm-row">
-                    <v-btn color="white" text :href="card.mainDemo">
+                    <v-btn
+                      color="white"
+                      small
+                      :href="card.mainDemo"
+                      elevation="2"
+                      class="mb-2 mb-sm-0"
+                      outlined
+                    >
                       main demo
                     </v-btn>
 
-                    <v-btn color="white" text :href="card.subDemo">
+                    <v-btn
+                      color="white"
+                      small
+                      :href="card.subDemo"
+                      elevation="2"
+                      class="ml-0 ml-sm-2"
+                      outlined
+                    >
                       sub demo
                     </v-btn>
                     <v-btn
@@ -174,10 +188,10 @@
       border
       class="section contact mx-height d-flex align-center justify-center"
     >
-      <v-col
-        class="content_wrap content_page4 d-flex justify-sm-space-between row"
-      >
-        <v-col class="d-flex col-12 flex-column justify-center">
+      <v-col class="content_wrap content_page4 d-flex align-center row">
+        <v-col
+          class="d-flex col-12 flex-column justify-center align-center pa-0"
+        >
           <h2>함께 일할 퍼블리셔를 찾고 계신가요?</h2>
           <p>#성실한 #책임감 #역량과 경험 #성장하는</p>
           <v-btn href="" outlined width="200">이력서</v-btn>
