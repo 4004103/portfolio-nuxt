@@ -60,9 +60,13 @@
           </div>
         </v-col>
         <v-col
-          class="grey lighten-3 pa-4 pa-sm-6 d-flex col-12 col-sm-3 col-offset-1 flex-column justify-sm-space-between right-side_box"
+          class="pa-sm-6 d-flex col-12 col-sm-3 col-offset-1 flex-column justify-sm-space-between right-side_box"
         >
-          <span class="lie_text">Hello ! </span>
+          <v-col class="grey lighten-3 pa-4 ">
+            <v-col>
+              <span class="lie_text">Hello ! </span>
+            </v-col>
+          </v-col>
         </v-col>
       </v-col>
     </v-flex>
