@@ -83,6 +83,7 @@ body,
 }
 
 .user_layout {
+  padding-top: 56px;
   .container {
     padding: 0;
   }
@@ -178,6 +179,12 @@ $black-color: #000;
   font-weight: bold;
   font-size: 3em;
   writing-mode: vertical-rl;
+}
+
+.user_layout .v-list-item__content {
+  // user_layout 안에 있는 v-list-item content 넓이 100% 설정.
+  flex: 0 1 auto;
+  width: 100%;
 }
 
 // mobile none
@@ -301,10 +308,6 @@ $black-color: #000;
         flex: 0 1 auto;
         font-weight: bold;
         font-size: 1.25em;
-      }
-      .v-list-item__content {
-        flex: 0 1 auto;
-        width: 100%;
       }
     }
   }

@@ -62,7 +62,7 @@
         <v-col
           class="grey lighten-3 pa-4 pa-sm-6 d-flex col-12 col-sm-3 col-offset-1 flex-column justify-sm-space-between right-side_box"
         >
-          <span class="lie_text mb-6">Hello ! </span>
+          <span class="lie_text">Hello ! </span>
         </v-col>
       </v-col>
     </v-flex>
@@ -82,7 +82,7 @@
           <h2>skill</h2>
         </v-col>
         <v-col class="d-flex col-12 col-sm-5 flex-column skill_text">
-          <h3 class="mb-8">제가 잘 하는 일은,</h3>
+          <h3 class="mb-4">제가 잘 하는 일은,</h3>
           <v-list-item two-line class="flex-column skill_list pa-0">
             <v-list-item-content
               v-for="text in test"
@@ -112,24 +112,31 @@
         <div class="d-flex justify-sm-space-between row">
           <v-col class="d-flex flex-wrap col-xs-12 col-sm-8 mb-0 mb-sm-12">
             <v-card>
-              <v-img
-                max-width="100%"
-                src="https://w7.pngwing.com/pngs/978/906/png-transparent-silver-imac-illustration-macbook-pro-imac-apple-computer-desktop-pc-template-angle-electronics.png"
-              ></v-img>
+              <nuxt-link to="../9bang">
+                <v-img
+                  max-width="100%"
+                  src="https://w7.pngwing.com/pngs/978/906/png-transparent-silver-imac-illustration-macbook-pro-imac-apple-computer-desktop-pc-template-angle-electronics.png"
+                ></v-img>
+              </nuxt-link>
             </v-card>
           </v-col>
           <v-col class="col-xs-12 col-sm-4 mb-12 mb-sm-0">
             <h3>Recent Work</h3>
+            <p>최근 작업물인 구방 입니다.</p>
           </v-col>
         </div>
 
         <div class="d-flex justify-sm-space-between flex-xs-column row">
           <v-col class="col-xs-12 col-sm-3">
             <span class="lie_text mb-6">Click!</span>
-            <p>버튼을 클릭하면 더 자세히 볼 수 있습니다.</p>
+            <p>Demo 버튼을 클릭하면 더 자세히 볼 수 있어요😃</p>
           </v-col>
-          <v-col class="d-flex flex-wrap col-xs-12 col-sm-9 pa-0">
-            <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+          <v-col class="d-flex flex-wrap col-12 col-sm-9 pa-0">
+            <v-col
+              v-for="card in cards"
+              :key="card.title"
+              class="col-12 col-sm-6"
+            >
               <v-card class="realtive version1 col-xs-12">
                 <v-img
                   :src="card.src"
@@ -141,14 +148,16 @@
                     class="pb-0 justify-center justify-sm-start"
                     v-text="card.title"
                   ></v-card-title>
-                  <v-card-actions class="d-flex flex-column flex-sm-row">
+                  <v-card-actions
+                    class="d-flex justify-center justify-sm-start row ma-0"
+                  >
                     <v-btn
                       color="white"
                       small
                       :href="card.mainDemo"
                       elevation="2"
-                      class="mb-2 mb-sm-0"
                       outlined
+                      target="_blank"
                     >
                       main demo
                     </v-btn>
@@ -158,8 +167,8 @@
                       small
                       :href="card.subDemo"
                       elevation="2"
-                      class="ml-0 ml-sm-2"
                       outlined
+                      target="_blank"
                     >
                       sub demo
                     </v-btn>
@@ -189,12 +198,10 @@
       class="section contact mx-height d-flex align-center justify-center"
     >
       <v-col class="content_wrap content_page4 d-flex align-center row">
-        <v-col
-          class="d-flex col-12 flex-column justify-center align-center pa-0"
-        >
+        <v-col class="d-flex col-12 flex-column justify-center align-center">
           <h2>함께 일할 퍼블리셔를 찾고 계신가요?</h2>
-          <v-list-item v-for="list in publist" :key="list.title">
-            <v-list-item-content>
+          <v-list-item class="flex-column mb-6">
+            <v-list-item-content v-for="list in publist" :key="list.title">
               <v-list-item-title
                 ><v-icon class="black--text mr-4" size="16px">check</v-icon
                 >{{ list }}</v-list-item-title
@@ -238,7 +245,6 @@ export default {
         github: "https://github.com/4004103/d10th/tree/develop",
         mainDemo: "https://4004103.github.io/d10th/",
         subDemo: "https://4004103.github.io/d10th/index_today.html",
-        flex: 12,
       },
       {
         title: "Jive Solutions",
@@ -246,7 +252,6 @@ export default {
         github: "https://github.com/4004103/jive/tree/develop",
         mainDemo: "https://4004103.github.io/jive/",
         subDemo: "https://4004103.github.io/jive/sub01.html",
-        flex: 6,
       },
       {
         title: "한국다양성연구소",
@@ -254,7 +259,6 @@ export default {
         github: "https://github.com/4004103/diversity/tree/develop",
         mainDemo: "https://4004103.github.io/diversity/",
         subDemo: "https://4004103.github.io/diversity/sub01.html",
-        flex: 6,
       },
       {
         title: "SuperBook Korea",
@@ -262,7 +266,6 @@ export default {
         github: "https://github.com/4004103/superbook/tree/develop",
         mainDemo: "https://4004103.github.io/superbook/",
         subDemo: "https://4004103.github.io/superbook/sub01.html",
-        flex: 12,
       },
       {
         title: "Good News",
@@ -270,7 +273,6 @@ export default {
         github: "https://github.com/4004103/goodnews/tree/develop",
         mainDemo: "https://4004103.github.io/goodnews/",
         subDemo: "https://4004103.github.io/goodnews/sub01.html",
-        flex: 6,
       },
       {
         title: "한국장애인연맹",
@@ -278,7 +280,6 @@ export default {
         github: "https://github.com/4004103/dpi/tree/develop",
         mainDemo: "https://4004103.github.io/dpi/",
         subDemo: "https://4004103.github.io/dpi/sub01.html",
-        flex: 6,
       },
       {
         title: "BF World",
@@ -286,7 +287,6 @@ export default {
         github: "https://github.com/4004103/bfworld/tree/develop",
         mainDemo: "https://4004103.github.io/bfworld/",
         subDemo: "https://4004103.github.io/bfworld/sub01.html",
-        flex: 12,
       },
       {
         title: "창원시사회적경제지원센터",
@@ -294,7 +294,6 @@ export default {
         github: "https://github.com/4004103/cwsec/tree/develop",
         mainDemo: "https://4004103.github.io/cwsec/",
         subDemo: "https://4004103.github.io/cwsec/sub01.html",
-        flex: 6,
       },
       {
         title: "비비시스터즈 워킹투어",
@@ -302,7 +301,6 @@ export default {
         github: "https://github.com/4004103/bbsisters/tree/develop",
         mainDemo: "https://4004103.github.io/bbsisters/",
         subDemo: "https://4004103.github.io/bbsisters/sub01.html",
-        flex: 6,
       },
     ],
     publist: [
