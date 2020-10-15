@@ -48,6 +48,7 @@
       hide-on-scroll
       color="rgba(255, 255, 255)"
       class="appbar_wrap d-flex justify-center"
+      scroll-target="#scrolling-techniques-4"
     >
       <nuxt-link to="/">
         <span class="black--text">SU A</span><span class="gray--text"> JO</span>

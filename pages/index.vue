@@ -114,26 +114,33 @@
       >
         <h2 class="d-flex col-12 pa-0">portfolio</h2>
         <div class="d-flex justify-sm-space-between row">
-          <v-col class="d-flex flex-wrap col-xs-12 col-sm-8 mb-0 mb-sm-12">
-            <v-card>
+          <v-col
+            class="d-flex flex-wrap justify-center col-xs-12 col-sm-8 mb-0 mb-sm-12"
+          >
+            <v-card elevation="0">
               <nuxt-link to="../9bang">
-                <v-img
-                  max-width="100%"
-                  src="https://w7.pngwing.com/pngs/978/906/png-transparent-silver-imac-illustration-macbook-pro-imac-apple-computer-desktop-pc-template-angle-electronics.png"
-                ></v-img>
+                <v-img max-width="300px" src="./images/9bang_frame.png"></v-img>
               </nuxt-link>
             </v-card>
           </v-col>
           <v-col class="col-xs-12 col-sm-4 mb-12 mb-sm-0">
-            <h3>Recent Work</h3>
-            <p>최근 작업물인 구방 입니다.</p>
+            <h3 class="mb-4">Recent Work</h3>
+            <p>
+              최근 작업물인 구방 입니다.<br />
+              클릭하면 좀 더 자세한 내용을 볼 수 있어요!<br />
+            </p>
           </v-col>
         </div>
 
         <div class="d-flex justify-sm-space-between flex-xs-column row">
           <v-col class="col-xs-12 col-sm-3">
             <span class="lie_text mb-6">Click!</span>
-            <p>Demo 버튼을 클릭하면 더 자세히 볼 수 있어요😃</p>
+            <p class="my-6">
+              Demo 버튼을 클릭하면 더 자세히 볼 수 있어요😃
+            </p>
+            <p>
+              그누보드 기반으로 작업했으며 bxSlider 플러그인을 사용했습니다.
+            </p>
           </v-col>
           <v-col class="d-flex flex-wrap col-12 col-sm-9 pa-0">
             <v-col
@@ -178,9 +185,10 @@
                     </v-btn>
                     <v-btn
                       absolute
-                      color="blue-grey darken-3 github_icon"
-                      class="white--text"
+                      class="github_icon pa-2"
+                      color="white"
                       fab
+                      outlined
                       medium
                       :href="card.github"
                     >
