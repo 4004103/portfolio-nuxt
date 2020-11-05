@@ -89,7 +89,7 @@
           <h3 class="mb-4">제가 잘 하는 일은,</h3>
           <v-list-item two-line class="flex-column skill_list pa-0">
             <v-list-item-content
-              v-for="text in test"
+              v-for="text in skill"
               :key="text.title"
               clas=""
               width="100%"
@@ -233,7 +233,7 @@
                 >
                   자신에 대해 자유롭게 표현해 주세요.
                 </v-expansion-panel-header>
-                <v-expansion-panel-content class="faq_panel_content px-4">
+                <v-expansion-panel-content class="faq_panel_content">
                   저는 항공서비스를 전공했으며 이후 보험사에서 영업지원 업무를
                   했었습니다. 근로계약이 종료된 후 구인사이트를 둘러보던 중 웹
                   디자이너의 구인글을 보고 관심을 갖게 되었고 웹 디자이너에 대한
@@ -253,7 +253,7 @@
                   기술 경향을 파악하고 업무 역량을 강화하기 위한 본인의 학습
                   방법을 설명해주세요.
                 </v-expansion-panel-header>
-                <v-expansion-panel-content class="faq_panel_content px-4">
+                <v-expansion-panel-content class="faq_panel_content">
                   사용하는 라이브러리, 배우고 싶은 라이브러리 등을 검색해보고,
                   SNS나 오픈카톡방에 참여해 기술 경향을 파악합니다. 현재 참여한
                   오픈카톡방은 공유가 활발하고 질문했을때 답변해주시는
@@ -271,7 +271,7 @@
                   지난 프로젝트들의 아쉬운 점이 있었다면 무엇이고, 개선 방안은
                   무엇일까요?
                 </v-expansion-panel-header>
-                <v-expansion-panel-content class="faq_panel_content px-4">
+                <v-expansion-panel-content class="faq_panel_content">
                   처음부터 투입되지 못한 프로젝트들이 아쉽습니다. 흔하게 말하는
                   것 중 하나가 남의 코드가 가장 어렵다는 것입니다. 저는 CSS를
                   유지보수 할 때 이런 어려움이 있었는데, 아무런 주석도 없고
@@ -292,7 +292,7 @@
                   지금까지의 업무 경험에서 어떤 경험이 가장 가치가 있는지
                   이야기해주세요.
                 </v-expansion-panel-header>
-                <v-expansion-panel-content class="faq_panel_content px-4">
+                <v-expansion-panel-content class="faq_panel_content">
                   새로운 걸 공부하고 그것을 상용에 오픈할 때마다 가치가 있다고
                   느낍니다. 최근에 vue와 nuxt를 사용하여 서비스를
                   오픈하였습니다. vue를 처음 사용하는 것이었어서 최대한 깔끔하게
@@ -310,7 +310,7 @@
                   본인이 성공적으로 수행한 프로젝트의 성공요인이 무엇인지,
                   어려움을 극복하기 위해 어떤 방법을 사용했는지 이야기해주세요.
                 </v-expansion-panel-header>
-                <v-expansion-panel-content class="faq_panel_content px-4">
+                <v-expansion-panel-content class="faq_panel_content">
                   최근에 구방이라는 프로젝트를 진행하며 의사소통이 정말
                   중요하다고 느꼈습니다. 혼자 개발하는 것이 아닌만큼 작업을
                   진행하는 모든 개발자와 디자이너가 소통을 해야하고 서로
@@ -343,7 +343,7 @@
               >
             </v-list-item-content>
           </v-list-item>
-          <v-btn href="" outlined width="200">이력서</v-btn>
+          <v-btn href="../resume" outlined width="200">이력서</v-btn>
         </v-col>
       </v-col>
     </v-flex>
@@ -354,7 +354,7 @@
 <script>
 export default {
   data: () => ({
-    test: [
+    skill: [
       {
         title: "Markup",
         second: "웹 표준을 준수하며 꼼꼼한 시멘틱 마크업을 합니다.",
