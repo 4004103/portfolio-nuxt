@@ -105,6 +105,10 @@ $black-color: #000;
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+a {
+  text-decoration: none;
+}
+
 /*  Nav Style
     ===================================================================== */
 .appbar_wrap {
@@ -125,7 +129,6 @@ $black-color: #000;
 
   a {
     color: inherit;
-    text-decoration: none;
     font-size: 1.25em;
     font-weight: 700;
   }

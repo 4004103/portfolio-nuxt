@@ -1,9 +1,7 @@
 <template>
   <v-layout wrap row>
     <v-flex xs12>
-      <h1 class="hidden">
-        조수아 포트폴리오
-      </h1>
+      <h1 class="hidden">조수아 포트폴리오</h1>
     </v-flex>
 
     <!-- s: main page image -->
@@ -62,7 +60,7 @@
         <v-col
           class="pa-sm-6 d-flex col-12 col-sm-3 flex-column justify-sm-space-between right-side_box"
         >
-          <v-col class="grey lighten-3 pa-4 ">
+          <v-col class="grey lighten-3 pa-4">
             <v-col>
               <span class="lie_text">Hello ! </span>
             </v-col>
@@ -141,12 +139,8 @@
         <div class="d-flex justify-sm-space-between flex-xs-column row">
           <v-col class="col-xs-12 col-sm-3">
             <span class="lie_text mb-6">Click!</span>
-            <p class="my-6">
-              Demo 버튼을 클릭하면 더 자세히 볼 수 있어요😃
-            </p>
-            <p>
-              그누보드 기반으로 작업했으며 bxSlider 플러그인을 사용했습니다.
-            </p>
+            <p class="my-6">Demo 버튼을 클릭하면 더 자세히 볼 수 있어요😃</p>
+            <p>그누보드를 기반으로 한 작업물입니다.</p>
           </v-col>
           <v-col class="d-flex flex-wrap col-12 col-sm-9 pa-0">
             <v-col
@@ -343,7 +337,9 @@
               >
             </v-list-item-content>
           </v-list-item>
-          <v-btn href="../resume" outlined width="200">이력서</v-btn>
+          <nuxt-link to="../resume">
+            <v-btn outlined width="200">이력서</v-btn>
+          </nuxt-link>
         </v-col>
       </v-col>
     </v-flex>

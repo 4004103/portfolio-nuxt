@@ -166,26 +166,26 @@ export default {
         title: "Good News World",
         term: "제작기간: 2달",
         content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다. ",
-        src: "https://www.superbookkorea.org/index.php",
+        src: "https://gnworld.org/",
       },
       {
         title: "BF World",
         term: "제작기간: 2달",
         content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다. ",
-        src: "https://www.superbookkorea.org/index.php",
+        src: "http://www.bfworld.org/",
       },
       {
         title: "한국장애인연맹(웹 접근성)",
         term: "제작기간: 2달",
         content:
-          "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다. 장애인의 사용성을 위하여 웹 접근성과 웹 표준 가이드를 준수하여 마크업 했습니다. 웹 접근성 마크를 획득하였습니다.",
+          "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다. 장애인의 사용성을 위하여 웹 접근성과 웹 표준 가이드를 준수하여 마크업 했습니다. 웹 접근성 마크를 획득했습니다.",
         src: "https://dpikorea.org/",
       },
       {
         title: "창원시사화적경제지원센터(웹 접근성)",
         term: "제작기간: 2달",
         content:
-          "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다. 장애인의 사용성을 위하여 웹 접근성과 웹 표준 가이드를 준수하여 마크업 했습니다. 웹 접근성 마크를 획득하였습니다.",
+          "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다. 장애인의 사용성을 위하여 웹 접근성과 웹 표준 가이드를 준수하여 마크업 했습니다. 웹 접근성 마크를 획득했습니다.",
         src: "https://cwsec.or.kr/",
       },
     ],
