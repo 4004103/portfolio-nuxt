@@ -128,7 +128,7 @@ export default {
         term: "2020년 10월 ~ 2020년 11월",
         content: "저의 포트폴리오 사이트입니다.",
         content2:
-          "Vue, Nuxt 사용 / Vuetify 컴포넌트 사용 / Sass 사용 / Material icon 사용.",
+          "Vue, Nuxt 사용 / Vuetify 컴포넌트 사용 / Sass 사용 / Material icon 사용 / 크로스브라우징.",
         src: "https://4004103.github.io/portfolio-nuxt/",
       },
       {
@@ -137,7 +137,7 @@ export default {
         content:
           "고객이 원하는 방을 설정하면 중개사가 알맞는 매물을 제안하는 구방에서 퍼블리싱을 담당했습니다. ",
         content2:
-          "Vue, Nuxt 사용 / Vuetify 컴포넌트 사용 / Sass 사용 / 관리자 페이지 퍼블리싱 / Material icon 사용.",
+          "Vue, Nuxt 사용 / Vuetify 컴포넌트 사용 / Sass 사용 / 관리자 페이지 퍼블리싱 / Material icon 사용 / 크로스브라우징.",
         src: "https://9bang.kr/home",
       },
       {
@@ -146,7 +146,8 @@ export default {
         content:
           "Bootstrap을 사용해 반응형으로 작업했습니다. Jquery 라이브러리를 사용해 동적인 웹사이트를 만들었습니다. ",
         content2:
-          "원 페이지 퍼블리싱 / Bootstrap / FontAwesome 사용 / 모바일 퍼스트.",
+          "원 페이지 퍼블리싱 / Bootstrap / FontAwesome 사용 / 모바일 퍼스트 / 크로스브라우징.",
+        src: "https://4004103.github.io/d10th/",
       },
       {
         title: "자이브솔루션즈 홈페이지 & 쇼핑몰",
