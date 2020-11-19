@@ -195,7 +195,7 @@ export default {
 </script>
 
 <style lang="scss">
-h3 {
+.content_wrap.content_page1 h3 {
   color: #5994c7;
 }
 // 프로필
