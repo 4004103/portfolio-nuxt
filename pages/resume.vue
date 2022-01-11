@@ -43,11 +43,11 @@
           <p class="mb-6">전문 분야와 기술, 개발할 때 사용하는 도구입니다.</p>
           <ul>
             <li>웹 표준, 브라우저 호환성, 반응형 웹, 웹 접근성, SEO</li>
-            <li>Vue, Nuxt</li>
+            <li>Vue<!--, Nuxt--></li>
             <li>HTML5</li>
             <li>CSS3, Sass</li>
             <li>Bootstrap, Vuetify, Material, FontAwesome</li>
-            <li>npm</li>
+            <!-- <li>npm</li> -->
             <li>Git, Chrome DevTools</li>
           </ul>
         </v-col>
@@ -119,7 +119,7 @@ export default {
         title: "푸른아이티 개발팀 퍼블리싱 ",
         term: "2017년 12월 ~ 2019년 10월",
         content:
-          "웹 에이전시에서 퍼블리싱을 담당했습니다. 맞춤형 홈페이지 퍼블리싱과 유지보수, 사내 기본 솔루션 유지보수를 진행했습니다.",
+          "웹 에이전시에서 퍼블리싱을 담당했습니다. 그누보드를 사용한 맞춤형 홈페이지 퍼블리싱과 유지보수, 사내 기본 솔루션 유지보수를 진행했습니다.",
       },
     ],
     project: [
@@ -189,6 +189,138 @@ export default {
           "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다. 장애인의 사용성을 위하여 웹 접근성과 웹 표준 가이드를 준수하여 마크업 했습니다. 웹 접근성 마크를 획득했습니다.",
         src: "https://cwsec.or.kr/",
       },
+      {
+        title: "강북서울외과",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "http://www.kbseoulsurgery.co.kr/",
+      },
+      {
+        title: "함께하는 36.5",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://www.alltogether365.com/",
+      },
+      {
+        title: "이주민지원센터 친구",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "http://www.chingune.or.kr/",
+      },
+      {
+        title: "핸즈영유아지원센터",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "http://www.hands-korea.org/",
+      },
+      {
+        title: "비비시스터즈",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://bbsisterstours.com/",
+      },
+      {
+        title: "SK사회적기업가센터",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://sksecenter.kaist.ac.kr/",
+      },
+      {
+        title: "팅커벨프로젝트",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "http://t-pjt.or.kr/",
+      },
+      {
+        title: "무지개책갈피",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "http://www.rainbowbookmark.com",
+      },
+      {
+        title: "사단법인 미래청소년협회",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://kfya.or.kr/",
+      },
+      {
+        title: "인재개발진흥원",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "http://www.bby.co.kr/",
+      },
+      {
+        title: "희망일터",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://welfarehope.com/",
+      },
+      {
+        title: "성남시장애인종합복지관",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "http://www.rehab21.or.kr/",
+      },
+      {
+        title: "양천구마을공동체지원센터",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://yangcheonmaeul.org/",
+      },
+      {
+        title: "ELF KOREA",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://exlf.co.kr/",
+      },
+      {
+        title: "사단법인 함께교육",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://edutogether.net/",
+      },
+      {
+        title: "사회적경제활성화지원센터",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://knsec.or.kr/",
+      },
+      {
+        title: "펀데이코리아",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://fundaykorea.me/",
+      },
+      {
+        title: "여성인권지원센터 살림",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://wom-survivors.or.kr/",
+      },
+      {
+        title: "세로토닌문화",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://www.serotonin.or.kr/",
+      },
+      {
+        title: "한국폼페병환우회",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://kpds.or.kr/",
+      },
+      {
+        title: "구립송파노인요양센터",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "https://www.carefriends.or.kr/",
+      },
+      {
+        title: "목동아동발달센터",
+        term: "제작기간: 2달",
+        content: "그누보드 기반으로 맞춤형 홈페이지를 작업했습니다.",
+        src: "http://www.icenter.or.kr/",
+      },
     ],
   }),
 };
@@ -226,6 +358,7 @@ export default {
     a {
       color: #5994c7;
       font-size: 0.825em;
+      width: max-content;
     }
   }
 }
